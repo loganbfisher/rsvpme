@@ -4,14 +4,11 @@
 /* @var $form CActiveForm */
 ?>
 
-<div class="form">
-
 <?php $form=$this->beginWidget('CActiveForm', array(
 	'id'=>'entry-form',
+        'action'=>Yii::app()->createUrl('//entries/create'),
 	'enableAjaxValidation'=>false,
 )); ?>
-
-	<p class="note">Fields with <span class="required">*</span> are required.</p>
 
 	<?php echo $form->errorSummary($model); ?>
 
@@ -27,16 +24,7 @@
 		<?php echo $form->error($model,'last_name'); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'confirmation_code'); ?>
-		<?php echo $form->textField($model,'confirmation_code'); ?>
-		<?php echo $form->error($model,'confirmation_code'); ?>
-	</div>
 
-	<div class="row buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
-	</div>
+		<?php echo CHtml::submitButton($model->isNewRecord ? 'RSVP' : 'Save',array('class'=>'submit')); ?>
 
 <?php $this->endWidget(); ?>
-
-</div><!-- form -->

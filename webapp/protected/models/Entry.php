@@ -36,12 +36,12 @@ class Entry extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('first_name, last_name, confirmation_code', 'required'),
+			array('first_name, last_name', 'required'),
 			array('confirmation_code', 'numerical', 'integerOnly'=>true),
 			array('first_name, last_name', 'length', 'max'=>255),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('first_name, last_name, confirmation_code', 'safe', 'on'=>'search'),
+			array('first_name, last_name', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -64,7 +64,6 @@ class Entry extends CActiveRecord
 		return array(
 			'first_name' => 'First Name',
 			'last_name' => 'Last Name',
-			'confirmation_code' => 'Confirmation Code',
 		);
 	}
 
@@ -81,7 +80,6 @@ class Entry extends CActiveRecord
 
 		$criteria->compare('first_name',$this->first_name,true);
 		$criteria->compare('last_name',$this->last_name,true);
-		$criteria->compare('confirmation_code',$this->confirmation_code);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

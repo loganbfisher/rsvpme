@@ -491,3 +491,118 @@ in /Applications/XAMPP/xamppfiles/htdocs/rsvpme/webapp/index.php (13)
 2012/11/17 05:34:48 [warning] [application] Failed to set unsafe attribute "entry_id" of "Entry".
 in /Applications/XAMPP/xamppfiles/htdocs/rsvpme/webapp/protected/controllers/EntriesController.php (139)
 in /Applications/XAMPP/xamppfiles/htdocs/rsvpme/webapp/index.php (13)
+2012/11/17 06:09:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "entry/create".' in /Applications/XAMPP/xamppfiles/htdocs/rsvpme/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/rsvpme/framework/web/CWebApplication.php(142): CWebApplication->runController('entry/create')
+#1 /Applications/XAMPP/xamppfiles/htdocs/rsvpme/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/XAMPP/xamppfiles/htdocs/rsvpme/webapp/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/rsvpme/webapp/index.php?r=entry/create
+HTTP_REFERER=http://local.www.rsvpme.com/rsvpme/webapp/index.php?r=site/index
+---
+2012/11/17 06:14:08 [error] [exception.CException] exception 'CException' with message 'Entry has an invalid validation rule. The rule must specify attributes to be validated and the validator name.' in /Applications/XAMPP/xamppfiles/htdocs/rsvpme/framework/base/CModel.php:287
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/rsvpme/framework/base/CModel.php(259): CModel->createValidators()
+#1 /Applications/XAMPP/xamppfiles/htdocs/rsvpme/framework/base/CModel.php(302): CModel->getValidators('first_name')
+#2 /Applications/XAMPP/xamppfiles/htdocs/rsvpme/framework/web/helpers/CHtml.php(1197): CModel->isAttributeRequired('first_name')
+#3 /Applications/XAMPP/xamppfiles/htdocs/rsvpme/framework/web/widgets/CActiveForm.php(563): CHtml::activeLabelEx(Object(Entry), 'first_name', Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/rsvpme/webapp/protected/views/entries/_form.php(18): CActiveForm->labelEx(Object(Entry), 'first_name')
+#5 /Applications/XAMPP/xamppfiles/htdocs/rsvpme/framework/web/CBaseController.php(127): require('/Applications/X...')
+#6 /Applications/XAMPP/xamppfiles/htdocs/rsvpme/framework/web/CBaseController.php(96): CBaseController->renderInternal('/Applications/X...', Array, true)
+#7 /Applications/XAMPP/xamppfiles/htdocs/rsvpme/framework/web/CController.php(870): CBaseController->renderFile('/Applications/X...', Array, true)
+#8 /Applications/XAMPP/xamppfiles/htdocs/rsvpme/webapp/protected/views/site/index.php(4): CController->renderPartial('/entries/_form', Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/rsvpme/framework/web/CBaseController.php(127): require('/Applications/X...')
+#10 /Applications/XAMPP/xamppfiles/htdocs/rsvpme/framework/web/CBaseController.php(96): CBaseController->renderInternal('/Applications/X...', NULL, true)
+#11 /Applications/XAMPP/xamppfiles/htdocs/rsvpme/framework/web/CController.php(870): CBaseController->renderFile('/Applications/X...', NULL, true)
+#12 /Applications/XAMPP/xamppfiles/htdocs/rsvpme/framework/web/CController.php(783): CController->renderPartial('index', NULL, true)
+#13 /Applications/XAMPP/xamppfiles/htdocs/rsvpme/webapp/protected/controllers/SiteController.php(32): CController->render('index')
+#14 /Applications/XAMPP/xamppfiles/htdocs/rsvpme/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#15 /Applications/XAMPP/xamppfiles/htdocs/rsvpme/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#16 /Applications/XAMPP/xamppfiles/htdocs/rsvpme/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#17 /Applications/XAMPP/xamppfiles/htdocs/rsvpme/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /Applications/XAMPP/xamppfiles/htdocs/rsvpme/framework/web/CWebApplication.php(283): CController->run('index')
+#19 /Applications/XAMPP/xamppfiles/htdocs/rsvpme/framework/web/CWebApplication.php(142): CWebApplication->runController('site/index')
+#20 /Applications/XAMPP/xamppfiles/htdocs/rsvpme/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#21 /Applications/XAMPP/xamppfiles/htdocs/rsvpme/webapp/index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/rsvpme/webapp/index.php?r=site/index
+HTTP_REFERER=http://local.www.rsvpme.com/rsvpme/webapp/index.php?r=entries/view&id=2
+---
+2012/11/17 06:14:25 [error] [exception.CException] exception 'CException' with message 'Entry has an invalid validation rule. The rule must specify attributes to be validated and the validator name.' in /Applications/XAMPP/xamppfiles/htdocs/rsvpme/framework/base/CModel.php:287
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/rsvpme/framework/base/CModel.php(259): CModel->createValidators()
+#1 /Applications/XAMPP/xamppfiles/htdocs/rsvpme/framework/base/CModel.php(302): CModel->getValidators('first_name')
+#2 /Applications/XAMPP/xamppfiles/htdocs/rsvpme/framework/web/helpers/CHtml.php(1197): CModel->isAttributeRequired('first_name')
+#3 /Applications/XAMPP/xamppfiles/htdocs/rsvpme/framework/web/widgets/CActiveForm.php(563): CHtml::activeLabelEx(Object(Entry), 'first_name', Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/rsvpme/webapp/protected/views/entries/_form.php(18): CActiveForm->labelEx(Object(Entry), 'first_name')
+#5 /Applications/XAMPP/xamppfiles/htdocs/rsvpme/framework/web/CBaseController.php(127): require('/Applications/X...')
+#6 /Applications/XAMPP/xamppfiles/htdocs/rsvpme/framework/web/CBaseController.php(96): CBaseController->renderInternal('/Applications/X...', Array, true)
+#7 /Applications/XAMPP/xamppfiles/htdocs/rsvpme/framework/web/CController.php(870): CBaseController->renderFile('/Applications/X...', Array, true)
+#8 /Applications/XAMPP/xamppfiles/htdocs/rsvpme/webapp/protected/views/site/index.php(4): CController->renderPartial('/entries/_form', Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/rsvpme/framework/web/CBaseController.php(127): require('/Applications/X...')
+#10 /Applications/XAMPP/xamppfiles/htdocs/rsvpme/framework/web/CBaseController.php(96): CBaseController->renderInternal('/Applications/X...', NULL, true)
+#11 /Applications/XAMPP/xamppfiles/htdocs/rsvpme/framework/web/CController.php(870): CBaseController->renderFile('/Applications/X...', NULL, true)
+#12 /Applications/XAMPP/xamppfiles/htdocs/rsvpme/framework/web/CController.php(783): CController->renderPartial('index', NULL, true)
+#13 /Applications/XAMPP/xamppfiles/htdocs/rsvpme/webapp/protected/controllers/SiteController.php(32): CController->render('index')
+#14 /Applications/XAMPP/xamppfiles/htdocs/rsvpme/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#15 /Applications/XAMPP/xamppfiles/htdocs/rsvpme/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#16 /Applications/XAMPP/xamppfiles/htdocs/rsvpme/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#17 /Applications/XAMPP/xamppfiles/htdocs/rsvpme/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /Applications/XAMPP/xamppfiles/htdocs/rsvpme/framework/web/CWebApplication.php(283): CController->run('index')
+#19 /Applications/XAMPP/xamppfiles/htdocs/rsvpme/framework/web/CWebApplication.php(142): CWebApplication->runController('site/index')
+#20 /Applications/XAMPP/xamppfiles/htdocs/rsvpme/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#21 /Applications/XAMPP/xamppfiles/htdocs/rsvpme/webapp/index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/rsvpme/webapp/index.php?r=site/index
+HTTP_REFERER=http://local.www.rsvpme.com/rsvpme/webapp/index.php?r=entries/view&id=2
+---
+2012/11/17 06:28:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "manage".' in /Applications/XAMPP/xamppfiles/htdocs/rsvpme/framework/web/CController.php:484
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/rsvpme/framework/web/CController.php(271): CController->missingAction('manage')
+#1 /Applications/XAMPP/xamppfiles/htdocs/rsvpme/framework/web/CWebApplication.php(283): CController->run('manage')
+#2 /Applications/XAMPP/xamppfiles/htdocs/rsvpme/framework/web/CWebApplication.php(142): CWebApplication->runController('entries/manage')
+#3 /Applications/XAMPP/xamppfiles/htdocs/rsvpme/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Applications/XAMPP/xamppfiles/htdocs/rsvpme/webapp/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/rsvpme/webapp/index.php?r=entries/manage
+---
+2012/11/17 06:28:24 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /Applications/XAMPP/xamppfiles/htdocs/rsvpme/framework/web/CController.php:337
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/rsvpme/framework/web/CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 /Applications/XAMPP/xamppfiles/htdocs/rsvpme/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 /Applications/XAMPP/xamppfiles/htdocs/rsvpme/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#3 /Applications/XAMPP/xamppfiles/htdocs/rsvpme/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 /Applications/XAMPP/xamppfiles/htdocs/rsvpme/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 /Applications/XAMPP/xamppfiles/htdocs/rsvpme/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 /Applications/XAMPP/xamppfiles/htdocs/rsvpme/framework/web/CController.php(292): CFilterChain->run()
+#7 /Applications/XAMPP/xamppfiles/htdocs/rsvpme/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/rsvpme/framework/web/CWebApplication.php(283): CController->run('view')
+#9 /Applications/XAMPP/xamppfiles/htdocs/rsvpme/framework/web/CWebApplication.php(142): CWebApplication->runController('entries/view')
+#10 /Applications/XAMPP/xamppfiles/htdocs/rsvpme/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /Applications/XAMPP/xamppfiles/htdocs/rsvpme/webapp/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/rsvpme/webapp/index.php?r=entries/view
+---
+2012/11/17 15:57:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "update".' in /Applications/XAMPP/xamppfiles/htdocs/rsvpme/framework/web/CController.php:484
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/rsvpme/framework/web/CController.php(271): CController->missingAction('update')
+#1 /Applications/XAMPP/xamppfiles/htdocs/rsvpme/framework/web/CWebApplication.php(283): CController->run('update')
+#2 /Applications/XAMPP/xamppfiles/htdocs/rsvpme/framework/web/CWebApplication.php(142): CWebApplication->runController('site/update')
+#3 /Applications/XAMPP/xamppfiles/htdocs/rsvpme/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Applications/XAMPP/xamppfiles/htdocs/rsvpme/webapp/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/rsvpme/webapp/index.php?r=site/update
+---
+2012/11/17 15:58:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "create".' in /Applications/XAMPP/xamppfiles/htdocs/rsvpme/framework/web/CController.php:484
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/rsvpme/framework/web/CController.php(271): CController->missingAction('create')
+#1 /Applications/XAMPP/xamppfiles/htdocs/rsvpme/framework/web/CWebApplication.php(283): CController->run('create')
+#2 /Applications/XAMPP/xamppfiles/htdocs/rsvpme/framework/web/CWebApplication.php(142): CWebApplication->runController('site/create')
+#3 /Applications/XAMPP/xamppfiles/htdocs/rsvpme/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Applications/XAMPP/xamppfiles/htdocs/rsvpme/webapp/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/rsvpme/webapp/index.php?r=site/create
+---
+2012/11/17 15:58:56 [warning] [application] Failed to set unsafe attribute "entry_id" of "Entry".
+in /Applications/XAMPP/xamppfiles/htdocs/rsvpme/webapp/protected/controllers/EntriesController.php (139)
+in /Applications/XAMPP/xamppfiles/htdocs/rsvpme/webapp/index.php (13)
