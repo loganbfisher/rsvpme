@@ -1,0 +1,459 @@
+2012/08/28 04:41:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "registration" was not found.' in /Users/lfisher/Desktop/sites/goopie/framework/web/actions/CViewAction.php:113
+Stack trace:
+#0 /Users/lfisher/Desktop/sites/goopie/framework/web/actions/CViewAction.php(124): CViewAction->resolveView('registration')
+#1 /Users/lfisher/Desktop/sites/goopie/framework/web/actions/CAction.php(75): CViewAction->run()
+#2 /Users/lfisher/Desktop/sites/goopie/framework/web/CController.php(309): CAction->runWithParams(Array)
+#3 /Users/lfisher/Desktop/sites/goopie/framework/web/CController.php(287): CController->runAction(Object(CViewAction))
+#4 /Users/lfisher/Desktop/sites/goopie/framework/web/CController.php(266): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 /Users/lfisher/Desktop/sites/goopie/framework/web/CWebApplication.php(283): CController->run('page')
+#6 /Users/lfisher/Desktop/sites/goopie/framework/web/CWebApplication.php(142): CWebApplication->runController('site/page')
+#7 /Users/lfisher/Desktop/sites/goopie/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#8 /Users/lfisher/Desktop/sites/goopie/webapp/index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/index.php?r=site/page&view=registration
+---
+2012/08/28 04:41:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "registration".' in /Users/lfisher/Desktop/sites/goopie/framework/web/CController.php:484
+Stack trace:
+#0 /Users/lfisher/Desktop/sites/goopie/framework/web/CController.php(271): CController->missingAction('registration')
+#1 /Users/lfisher/Desktop/sites/goopie/framework/web/CWebApplication.php(283): CController->run('registration')
+#2 /Users/lfisher/Desktop/sites/goopie/framework/web/CWebApplication.php(142): CWebApplication->runController('site/registrati...')
+#3 /Users/lfisher/Desktop/sites/goopie/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/lfisher/Desktop/sites/goopie/webapp/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=site/registration
+---
+2012/08/28 04:41:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "register".' in /Users/lfisher/Desktop/sites/goopie/framework/web/CController.php:484
+Stack trace:
+#0 /Users/lfisher/Desktop/sites/goopie/framework/web/CController.php(271): CController->missingAction('register')
+#1 /Users/lfisher/Desktop/sites/goopie/framework/web/CWebApplication.php(283): CController->run('register')
+#2 /Users/lfisher/Desktop/sites/goopie/framework/web/CWebApplication.php(142): CWebApplication->runController('site/register')
+#3 /Users/lfisher/Desktop/sites/goopie/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/lfisher/Desktop/sites/goopie/webapp/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=site/register
+---
+2012/08/28 04:43:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "registration".' in /Users/lfisher/Desktop/sites/goopie/framework/web/CController.php:484
+Stack trace:
+#0 /Users/lfisher/Desktop/sites/goopie/framework/web/CController.php(271): CController->missingAction('registration')
+#1 /Users/lfisher/Desktop/sites/goopie/framework/web/CWebApplication.php(283): CController->run('registration')
+#2 /Users/lfisher/Desktop/sites/goopie/framework/web/CWebApplication.php(142): CWebApplication->runController('site/registrati...')
+#3 /Users/lfisher/Desktop/sites/goopie/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/lfisher/Desktop/sites/goopie/webapp/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=site/registration
+---
+2012/08/28 04:43:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "registration".' in /Users/lfisher/Desktop/sites/goopie/framework/web/CController.php:484
+Stack trace:
+#0 /Users/lfisher/Desktop/sites/goopie/framework/web/CController.php(271): CController->missingAction('registration')
+#1 /Users/lfisher/Desktop/sites/goopie/framework/web/CWebApplication.php(283): CController->run('registration')
+#2 /Users/lfisher/Desktop/sites/goopie/framework/web/CWebApplication.php(142): CWebApplication->runController('site/registrati...')
+#3 /Users/lfisher/Desktop/sites/goopie/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/lfisher/Desktop/sites/goopie/webapp/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=site/registration
+---
+2012/08/28 04:44:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "registration".' in /Users/lfisher/Desktop/sites/goopie/framework/web/CController.php:484
+Stack trace:
+#0 /Users/lfisher/Desktop/sites/goopie/framework/web/CController.php(271): CController->missingAction('registration')
+#1 /Users/lfisher/Desktop/sites/goopie/framework/web/CWebApplication.php(283): CController->run('registration')
+#2 /Users/lfisher/Desktop/sites/goopie/framework/web/CWebApplication.php(142): CWebApplication->runController('site/registrati...')
+#3 /Users/lfisher/Desktop/sites/goopie/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/lfisher/Desktop/sites/goopie/webapp/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=site/registration
+---
+2012/08/28 15:14:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "registration".' in /Users/lfisher/Desktop/sites/goopie/framework/web/CController.php:484
+Stack trace:
+#0 /Users/lfisher/Desktop/sites/goopie/framework/web/CController.php(271): CController->missingAction('registration')
+#1 /Users/lfisher/Desktop/sites/goopie/framework/web/CWebApplication.php(283): CController->run('registration')
+#2 /Users/lfisher/Desktop/sites/goopie/framework/web/CWebApplication.php(142): CWebApplication->runController('site/registrati...')
+#3 /Users/lfisher/Desktop/sites/goopie/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/lfisher/Desktop/sites/goopie/webapp/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=site/registration
+HTTP_REFERER=http://local.www.goopie.com/index.php
+---
+2012/08/28 15:15:48 [error] [php] Undefined variable: model (/Users/lfisher/Desktop/sites/goopie/webapp/protected/views/site/registration.php:16)
+Stack trace:
+#0 /Users/lfisher/Desktop/sites/goopie/framework/web/CController.php(870): SiteController->renderFile()
+#1 /Users/lfisher/Desktop/sites/goopie/framework/web/CController.php(783): SiteController->renderPartial()
+#2 /Users/lfisher/Desktop/sites/goopie/webapp/protected/controllers/SiteController.php(105): SiteController->render()
+#3 /Users/lfisher/Desktop/sites/goopie/framework/web/actions/CInlineAction.php(50): SiteController->actionRegistration()
+#4 /Users/lfisher/Desktop/sites/goopie/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /Users/lfisher/Desktop/sites/goopie/framework/web/CController.php(287): SiteController->runAction()
+#6 /Users/lfisher/Desktop/sites/goopie/framework/web/CController.php(266): SiteController->runActionWithFilters()
+#7 /Users/lfisher/Desktop/sites/goopie/framework/web/CWebApplication.php(283): SiteController->run()
+#8 /Users/lfisher/Desktop/sites/goopie/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#9 /Users/lfisher/Desktop/sites/goopie/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /Users/lfisher/Desktop/sites/goopie/webapp/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=site/registration
+in /Users/lfisher/Desktop/sites/goopie/webapp/protected/views/site/registration.php (16)
+in /Users/lfisher/Desktop/sites/goopie/webapp/protected/controllers/SiteController.php (105)
+in /Users/lfisher/Desktop/sites/goopie/webapp/index.php (13)
+2012/08/28 15:16:18 [error] [exception.CException] exception 'CException' with message 'Property "LoginForm.email" is not defined.' in /Users/lfisher/Desktop/sites/goopie/framework/base/CComponent.php:131
+Stack trace:
+#0 /Users/lfisher/Desktop/sites/goopie/framework/web/helpers/CHtml.php(2158): CComponent->__get('email')
+#1 /Users/lfisher/Desktop/sites/goopie/framework/web/helpers/CHtml.php(1887): CHtml::resolveValue(Object(LoginForm), 'email')
+#2 /Users/lfisher/Desktop/sites/goopie/framework/web/helpers/CHtml.php(1217): CHtml::activeInputField('text', Object(LoginForm), 'email', Array)
+#3 /Users/lfisher/Desktop/sites/goopie/framework/web/widgets/CActiveForm.php(658): CHtml::activeTextField(Object(LoginForm), 'email', Array)
+#4 /Users/lfisher/Desktop/sites/goopie/webapp/protected/views/site/registration.php(32): CActiveForm->textField(Object(LoginForm), 'email')
+#5 /Users/lfisher/Desktop/sites/goopie/framework/web/CBaseController.php(127): require('/Users/lfisher/...')
+#6 /Users/lfisher/Desktop/sites/goopie/framework/web/CBaseController.php(96): CBaseController->renderInternal('/Users/lfisher/...', Array, true)
+#7 /Users/lfisher/Desktop/sites/goopie/framework/web/CController.php(870): CBaseController->renderFile('/Users/lfisher/...', Array, true)
+#8 /Users/lfisher/Desktop/sites/goopie/framework/web/CController.php(783): CController->renderPartial('registration', Array, true)
+#9 /Users/lfisher/Desktop/sites/goopie/webapp/protected/controllers/SiteController.php(121): CController->render('registration', Array)
+#10 /Users/lfisher/Desktop/sites/goopie/framework/web/actions/CInlineAction.php(50): SiteController->actionRegistration()
+#11 /Users/lfisher/Desktop/sites/goopie/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#12 /Users/lfisher/Desktop/sites/goopie/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#13 /Users/lfisher/Desktop/sites/goopie/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /Users/lfisher/Desktop/sites/goopie/framework/web/CWebApplication.php(283): CController->run('registration')
+#15 /Users/lfisher/Desktop/sites/goopie/framework/web/CWebApplication.php(142): CWebApplication->runController('site/registrati...')
+#16 /Users/lfisher/Desktop/sites/goopie/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#17 /Users/lfisher/Desktop/sites/goopie/webapp/index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/index.php?r=site/registration
+HTTP_REFERER=http://local.www.goopie.com/index.php
+---
+2012/08/28 20:29:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "create".' in /Users/lfisher/Desktop/sites/goopie/framework/web/CController.php:484
+Stack trace:
+#0 /Users/lfisher/Desktop/sites/goopie/framework/web/CController.php(271): CController->missingAction('create')
+#1 /Users/lfisher/Desktop/sites/goopie/framework/web/CWebApplication.php(283): CController->run('create')
+#2 /Users/lfisher/Desktop/sites/goopie/framework/web/CWebApplication.php(142): CWebApplication->runController('site/create')
+#3 /Users/lfisher/Desktop/sites/goopie/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/lfisher/Desktop/sites/goopie/webapp/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=site/create
+---
+2012/08/28 20:55:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "login".' in /Users/lfisher/Desktop/sites/goopie/framework/web/CController.php:484
+Stack trace:
+#0 /Users/lfisher/Desktop/sites/goopie/framework/web/CController.php(271): CController->missingAction('login')
+#1 /Users/lfisher/Desktop/sites/goopie/framework/web/CWebApplication.php(283): CController->run('login')
+#2 /Users/lfisher/Desktop/sites/goopie/framework/web/CWebApplication.php(142): CWebApplication->runController('user/login')
+#3 /Users/lfisher/Desktop/sites/goopie/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/lfisher/Desktop/sites/goopie/webapp/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user/login&id=29
+HTTP_REFERER=http://local.www.goopie.com/index.php?r=user/create
+---
+2012/08/28 20:56:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "login".' in /Users/lfisher/Desktop/sites/goopie/framework/web/CController.php:484
+Stack trace:
+#0 /Users/lfisher/Desktop/sites/goopie/framework/web/CController.php(271): CController->missingAction('login')
+#1 /Users/lfisher/Desktop/sites/goopie/framework/web/CWebApplication.php(283): CController->run('login')
+#2 /Users/lfisher/Desktop/sites/goopie/framework/web/CWebApplication.php(142): CWebApplication->runController('user/login')
+#3 /Users/lfisher/Desktop/sites/goopie/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/lfisher/Desktop/sites/goopie/webapp/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user/login&id=29
+HTTP_REFERER=http://local.www.goopie.com/index.php?r=user/create
+---
+2012/08/28 21:07:00 [error] [php] Missing argument 1 for CWebUser::login(), called in /Users/lfisher/Desktop/sites/goopie/webapp/protected/controllers/UserController.php on line 74 and defined (/Users/lfisher/Desktop/sites/goopie/framework/web/auth/CWebUser.php:222)
+Stack trace:
+#0 /Users/lfisher/Desktop/sites/goopie/framework/web/CController.php(309): CInlineAction->runWithParams()
+#1 /Users/lfisher/Desktop/sites/goopie/framework/web/filters/CFilterChain.php(134): UserController->runAction()
+#2 /Users/lfisher/Desktop/sites/goopie/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#3 /Users/lfisher/Desktop/sites/goopie/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#4 /Users/lfisher/Desktop/sites/goopie/framework/web/filters/CInlineFilter.php(59): UserController->filterAccessControl()
+#5 /Users/lfisher/Desktop/sites/goopie/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#6 /Users/lfisher/Desktop/sites/goopie/framework/web/CController.php(292): CFilterChain->run()
+#7 /Users/lfisher/Desktop/sites/goopie/framework/web/CController.php(266): UserController->runActionWithFilters()
+#8 /Users/lfisher/Desktop/sites/goopie/framework/web/CWebApplication.php(283): UserController->run()
+#9 /Users/lfisher/Desktop/sites/goopie/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#10 /Users/lfisher/Desktop/sites/goopie/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /Users/lfisher/Desktop/sites/goopie/webapp/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=user/create
+in /Users/lfisher/Desktop/sites/goopie/webapp/protected/controllers/UserController.php (74)
+in /Users/lfisher/Desktop/sites/goopie/webapp/index.php (13)
+2012/08/28 21:07:46 [error] [php] Object of class User could not be converted to string (/Users/lfisher/Desktop/sites/goopie/webapp/protected/controllers/UserController.php:74)
+Stack trace:
+#0 /Users/lfisher/Desktop/sites/goopie/framework/web/filters/CFilterChain.php(134): UserController->runAction()
+#1 /Users/lfisher/Desktop/sites/goopie/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#2 /Users/lfisher/Desktop/sites/goopie/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#3 /Users/lfisher/Desktop/sites/goopie/framework/web/filters/CInlineFilter.php(59): UserController->filterAccessControl()
+#4 /Users/lfisher/Desktop/sites/goopie/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#5 /Users/lfisher/Desktop/sites/goopie/framework/web/CController.php(292): CFilterChain->run()
+#6 /Users/lfisher/Desktop/sites/goopie/framework/web/CController.php(266): UserController->runActionWithFilters()
+#7 /Users/lfisher/Desktop/sites/goopie/framework/web/CWebApplication.php(283): UserController->run()
+#8 /Users/lfisher/Desktop/sites/goopie/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#9 /Users/lfisher/Desktop/sites/goopie/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /Users/lfisher/Desktop/sites/goopie/webapp/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=user/create
+in /Users/lfisher/Desktop/sites/goopie/webapp/protected/controllers/UserController.php (74)
+in /Users/lfisher/Desktop/sites/goopie/webapp/index.php (13)
+2012/08/28 21:08:13 [error] [php] Object of class UserController could not be converted to string (/Users/lfisher/Desktop/sites/goopie/webapp/protected/controllers/UserController.php:74)
+Stack trace:
+#0 /Users/lfisher/Desktop/sites/goopie/framework/web/filters/CFilterChain.php(134): UserController->runAction()
+#1 /Users/lfisher/Desktop/sites/goopie/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#2 /Users/lfisher/Desktop/sites/goopie/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#3 /Users/lfisher/Desktop/sites/goopie/framework/web/filters/CInlineFilter.php(59): UserController->filterAccessControl()
+#4 /Users/lfisher/Desktop/sites/goopie/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#5 /Users/lfisher/Desktop/sites/goopie/framework/web/CController.php(292): CFilterChain->run()
+#6 /Users/lfisher/Desktop/sites/goopie/framework/web/CController.php(266): UserController->runActionWithFilters()
+#7 /Users/lfisher/Desktop/sites/goopie/framework/web/CWebApplication.php(283): UserController->run()
+#8 /Users/lfisher/Desktop/sites/goopie/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#9 /Users/lfisher/Desktop/sites/goopie/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /Users/lfisher/Desktop/sites/goopie/webapp/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=user/create
+in /Users/lfisher/Desktop/sites/goopie/webapp/protected/controllers/UserController.php (74)
+in /Users/lfisher/Desktop/sites/goopie/webapp/index.php (13)
+2012/08/28 21:08:30 [error] [php] Missing argument 1 for CWebUser::login(), called in /Users/lfisher/Desktop/sites/goopie/webapp/protected/controllers/UserController.php on line 74 and defined (/Users/lfisher/Desktop/sites/goopie/framework/web/auth/CWebUser.php:222)
+Stack trace:
+#0 /Users/lfisher/Desktop/sites/goopie/framework/web/CController.php(309): CInlineAction->runWithParams()
+#1 /Users/lfisher/Desktop/sites/goopie/framework/web/filters/CFilterChain.php(134): UserController->runAction()
+#2 /Users/lfisher/Desktop/sites/goopie/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#3 /Users/lfisher/Desktop/sites/goopie/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#4 /Users/lfisher/Desktop/sites/goopie/framework/web/filters/CInlineFilter.php(59): UserController->filterAccessControl()
+#5 /Users/lfisher/Desktop/sites/goopie/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#6 /Users/lfisher/Desktop/sites/goopie/framework/web/CController.php(292): CFilterChain->run()
+#7 /Users/lfisher/Desktop/sites/goopie/framework/web/CController.php(266): UserController->runActionWithFilters()
+#8 /Users/lfisher/Desktop/sites/goopie/framework/web/CWebApplication.php(283): UserController->run()
+#9 /Users/lfisher/Desktop/sites/goopie/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#10 /Users/lfisher/Desktop/sites/goopie/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /Users/lfisher/Desktop/sites/goopie/webapp/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=user/create
+in /Users/lfisher/Desktop/sites/goopie/webapp/protected/controllers/UserController.php (74)
+in /Users/lfisher/Desktop/sites/goopie/webapp/index.php (13)
+2012/08/31 04:11:56 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "global/_header".' in /Users/lfisher/Desktop/sites/goopie/framework/web/CController.php:879
+Stack trace:
+#0 /Users/lfisher/Desktop/sites/goopie/webapp/protected/views/layouts/main.php(25): CController->renderPartial('global/_header')
+#1 /Users/lfisher/Desktop/sites/goopie/framework/web/CBaseController.php(127): require('/Users/lfisher/...')
+#2 /Users/lfisher/Desktop/sites/goopie/framework/web/CBaseController.php(96): CBaseController->renderInternal('/Users/lfisher/...', Array, true)
+#3 /Users/lfisher/Desktop/sites/goopie/framework/web/widgets/CContentDecorator.php(77): CBaseController->renderFile('/Users/lfisher/...', Array, true)
+#4 /Users/lfisher/Desktop/sites/goopie/framework/web/widgets/CContentDecorator.php(55): CContentDecorator->decorate('<div id="conten...')
+#5 /Users/lfisher/Desktop/sites/goopie/framework/web/widgets/COutputProcessor.php(45): CContentDecorator->processOutput('<div id="conten...')
+#6 /Users/lfisher/Desktop/sites/goopie/framework/web/CBaseController.php(207): COutputProcessor->run()
+#7 /Users/lfisher/Desktop/sites/goopie/framework/web/CBaseController.php(301): CBaseController->endWidget('CContentDecorat...')
+#8 /Users/lfisher/Desktop/sites/goopie/webapp/protected/views/layouts/column1.php(6): CBaseController->endContent()
+#9 /Users/lfisher/Desktop/sites/goopie/framework/web/CBaseController.php(127): require('/Users/lfisher/...')
+#10 /Users/lfisher/Desktop/sites/goopie/framework/web/CBaseController.php(96): CBaseController->renderInternal('/Users/lfisher/...', Array, true)
+#11 /Users/lfisher/Desktop/sites/goopie/framework/web/CController.php(785): CBaseController->renderFile('/Users/lfisher/...', Array, true)
+#12 /Users/lfisher/Desktop/sites/goopie/webapp/protected/controllers/SiteController.php(32): CController->render('index')
+#13 /Users/lfisher/Desktop/sites/goopie/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#14 /Users/lfisher/Desktop/sites/goopie/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#15 /Users/lfisher/Desktop/sites/goopie/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#16 /Users/lfisher/Desktop/sites/goopie/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /Users/lfisher/Desktop/sites/goopie/framework/web/CWebApplication.php(283): CController->run('')
+#18 /Users/lfisher/Desktop/sites/goopie/framework/web/CWebApplication.php(142): CWebApplication->runController('')
+#19 /Users/lfisher/Desktop/sites/goopie/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#20 /Users/lfisher/Desktop/sites/goopie/webapp/index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/
+---
+2012/08/31 04:12:25 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "/global/_header".' in /Users/lfisher/Desktop/sites/goopie/framework/web/CController.php:879
+Stack trace:
+#0 /Users/lfisher/Desktop/sites/goopie/webapp/protected/views/layouts/main.php(25): CController->renderPartial('/global/_header')
+#1 /Users/lfisher/Desktop/sites/goopie/framework/web/CBaseController.php(127): require('/Users/lfisher/...')
+#2 /Users/lfisher/Desktop/sites/goopie/framework/web/CBaseController.php(96): CBaseController->renderInternal('/Users/lfisher/...', Array, true)
+#3 /Users/lfisher/Desktop/sites/goopie/framework/web/widgets/CContentDecorator.php(77): CBaseController->renderFile('/Users/lfisher/...', Array, true)
+#4 /Users/lfisher/Desktop/sites/goopie/framework/web/widgets/CContentDecorator.php(55): CContentDecorator->decorate('<div id="conten...')
+#5 /Users/lfisher/Desktop/sites/goopie/framework/web/widgets/COutputProcessor.php(45): CContentDecorator->processOutput('<div id="conten...')
+#6 /Users/lfisher/Desktop/sites/goopie/framework/web/CBaseController.php(207): COutputProcessor->run()
+#7 /Users/lfisher/Desktop/sites/goopie/framework/web/CBaseController.php(301): CBaseController->endWidget('CContentDecorat...')
+#8 /Users/lfisher/Desktop/sites/goopie/webapp/protected/views/layouts/column1.php(6): CBaseController->endContent()
+#9 /Users/lfisher/Desktop/sites/goopie/framework/web/CBaseController.php(127): require('/Users/lfisher/...')
+#10 /Users/lfisher/Desktop/sites/goopie/framework/web/CBaseController.php(96): CBaseController->renderInternal('/Users/lfisher/...', Array, true)
+#11 /Users/lfisher/Desktop/sites/goopie/framework/web/CController.php(785): CBaseController->renderFile('/Users/lfisher/...', Array, true)
+#12 /Users/lfisher/Desktop/sites/goopie/webapp/protected/controllers/SiteController.php(32): CController->render('index')
+#13 /Users/lfisher/Desktop/sites/goopie/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#14 /Users/lfisher/Desktop/sites/goopie/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#15 /Users/lfisher/Desktop/sites/goopie/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#16 /Users/lfisher/Desktop/sites/goopie/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /Users/lfisher/Desktop/sites/goopie/framework/web/CWebApplication.php(283): CController->run('')
+#18 /Users/lfisher/Desktop/sites/goopie/framework/web/CWebApplication.php(142): CWebApplication->runController('')
+#19 /Users/lfisher/Desktop/sites/goopie/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#20 /Users/lfisher/Desktop/sites/goopie/webapp/index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/
+---
+2012/08/31 04:50:55 [error] [php] Undefined variable: model (/Users/lfisher/Desktop/sites/goopie/webapp/protected/views/site/login.php:28)
+Stack trace:
+#0 /Users/lfisher/Desktop/sites/goopie/framework/web/CController.php(870): SiteController->renderFile()
+#1 /Users/lfisher/Desktop/sites/goopie/webapp/protected/views/layouts/main.php(27): SiteController->renderPartial()
+#2 /Users/lfisher/Desktop/sites/goopie/framework/web/CBaseController.php(127): require()
+#3 /Users/lfisher/Desktop/sites/goopie/framework/web/CBaseController.php(96): SiteController->renderInternal()
+#4 /Users/lfisher/Desktop/sites/goopie/framework/web/widgets/CContentDecorator.php(77): SiteController->renderFile()
+#5 /Users/lfisher/Desktop/sites/goopie/framework/web/widgets/CContentDecorator.php(55): CContentDecorator->decorate()
+#6 /Users/lfisher/Desktop/sites/goopie/framework/web/widgets/COutputProcessor.php(45): CContentDecorator->processOutput()
+#7 /Users/lfisher/Desktop/sites/goopie/framework/web/CBaseController.php(207): CContentDecorator->run()
+#8 /Users/lfisher/Desktop/sites/goopie/framework/web/CBaseController.php(301): SiteController->endWidget()
+#9 /Users/lfisher/Desktop/sites/goopie/webapp/protected/views/layouts/column1.php(6): SiteController->endContent()
+#10 /Users/lfisher/Desktop/sites/goopie/framework/web/CBaseController.php(127): require()
+#11 /Users/lfisher/Desktop/sites/goopie/framework/web/CBaseController.php(96): SiteController->renderInternal()
+#12 /Users/lfisher/Desktop/sites/goopie/framework/web/CController.php(785): SiteController->renderFile()
+#13 /Users/lfisher/Desktop/sites/goopie/webapp/protected/controllers/SiteController.php(32): SiteController->render()
+#14 /Users/lfisher/Desktop/sites/goopie/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#15 /Users/lfisher/Desktop/sites/goopie/framework/web/CController.php(309): CInlineAction->runWithParams()
+#16 /Users/lfisher/Desktop/sites/goopie/framework/web/CController.php(287): SiteController->runAction()
+#17 /Users/lfisher/Desktop/sites/goopie/framework/web/CController.php(266): SiteController->runActionWithFilters()
+#18 /Users/lfisher/Desktop/sites/goopie/framework/web/CWebApplication.php(283): SiteController->run()
+#19 /Users/lfisher/Desktop/sites/goopie/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#20 /Users/lfisher/Desktop/sites/goopie/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#21 /Users/lfisher/Desktop/sites/goopie/webapp/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=site/index
+in /Users/lfisher/Desktop/sites/goopie/webapp/protected/views/site/login.php (28)
+in /Users/lfisher/Desktop/sites/goopie/webapp/protected/views/layouts/main.php (27)
+in /Users/lfisher/Desktop/sites/goopie/webapp/protected/views/layouts/column1.php (6)
+2012/08/31 04:56:52 [error] [php] Undefined variable: model (/Users/lfisher/Desktop/sites/goopie/webapp/protected/views/layouts/main.php:27)
+Stack trace:
+#0 /Users/lfisher/Desktop/sites/goopie/framework/web/widgets/CContentDecorator.php(77): SiteController->renderFile()
+#1 /Users/lfisher/Desktop/sites/goopie/framework/web/widgets/CContentDecorator.php(55): CContentDecorator->decorate()
+#2 /Users/lfisher/Desktop/sites/goopie/framework/web/widgets/COutputProcessor.php(45): CContentDecorator->processOutput()
+#3 /Users/lfisher/Desktop/sites/goopie/framework/web/CBaseController.php(207): CContentDecorator->run()
+#4 /Users/lfisher/Desktop/sites/goopie/framework/web/CBaseController.php(301): SiteController->endWidget()
+#5 /Users/lfisher/Desktop/sites/goopie/webapp/protected/views/layouts/column1.php(6): SiteController->endContent()
+#6 /Users/lfisher/Desktop/sites/goopie/framework/web/CBaseController.php(127): require()
+#7 /Users/lfisher/Desktop/sites/goopie/framework/web/CBaseController.php(96): SiteController->renderInternal()
+#8 /Users/lfisher/Desktop/sites/goopie/framework/web/CController.php(785): SiteController->renderFile()
+#9 /Users/lfisher/Desktop/sites/goopie/webapp/protected/controllers/SiteController.php(32): SiteController->render()
+#10 /Users/lfisher/Desktop/sites/goopie/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#11 /Users/lfisher/Desktop/sites/goopie/framework/web/CController.php(309): CInlineAction->runWithParams()
+#12 /Users/lfisher/Desktop/sites/goopie/framework/web/CController.php(287): SiteController->runAction()
+#13 /Users/lfisher/Desktop/sites/goopie/framework/web/CController.php(266): SiteController->runActionWithFilters()
+#14 /Users/lfisher/Desktop/sites/goopie/framework/web/CWebApplication.php(283): SiteController->run()
+#15 /Users/lfisher/Desktop/sites/goopie/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#16 /Users/lfisher/Desktop/sites/goopie/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#17 /Users/lfisher/Desktop/sites/goopie/webapp/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=site/index
+in /Users/lfisher/Desktop/sites/goopie/webapp/protected/views/layouts/main.php (27)
+in /Users/lfisher/Desktop/sites/goopie/webapp/protected/views/layouts/column1.php (6)
+in /Users/lfisher/Desktop/sites/goopie/webapp/protected/controllers/SiteController.php (32)
+2012/08/31 04:58:25 [error] [exception.CException] exception 'CException' with message 'Property "User.rememberMe" is not defined.' in /Users/lfisher/Desktop/sites/goopie/framework/base/CComponent.php:131
+Stack trace:
+#0 /Users/lfisher/Desktop/sites/goopie/framework/db/ar/CActiveRecord.php(144): CComponent->__get('rememberMe')
+#1 /Users/lfisher/Desktop/sites/goopie/framework/web/helpers/CHtml.php(2158): CActiveRecord->__get('rememberMe')
+#2 /Users/lfisher/Desktop/sites/goopie/framework/web/helpers/CHtml.php(1460): CHtml::resolveValue(Object(User), 'rememberMe')
+#3 /Users/lfisher/Desktop/sites/goopie/framework/web/widgets/CActiveForm.php(748): CHtml::activeCheckBox(Object(User), 'rememberMe', Array)
+#4 /Users/lfisher/Desktop/sites/goopie/webapp/protected/views/site/login.php(43): CActiveForm->checkBox(Object(User), 'rememberMe')
+#5 /Users/lfisher/Desktop/sites/goopie/framework/web/CBaseController.php(127): require('/Users/lfisher/...')
+#6 /Users/lfisher/Desktop/sites/goopie/framework/web/CBaseController.php(96): CBaseController->renderInternal('/Users/lfisher/...', Array, true)
+#7 /Users/lfisher/Desktop/sites/goopie/framework/web/CController.php(870): CBaseController->renderFile('/Users/lfisher/...', Array, true)
+#8 /Users/lfisher/Desktop/sites/goopie/webapp/protected/views/layouts/main.php(27): CController->renderPartial('/site/login', Array)
+#9 /Users/lfisher/Desktop/sites/goopie/framework/web/CBaseController.php(127): require('/Users/lfisher/...')
+#10 /Users/lfisher/Desktop/sites/goopie/framework/web/CBaseController.php(96): CBaseController->renderInternal('/Users/lfisher/...', Array, true)
+#11 /Users/lfisher/Desktop/sites/goopie/framework/web/widgets/CContentDecorator.php(77): CBaseController->renderFile('/Users/lfisher/...', Array, true)
+#12 /Users/lfisher/Desktop/sites/goopie/framework/web/widgets/CContentDecorator.php(55): CContentDecorator->decorate('<div id="conten...')
+#13 /Users/lfisher/Desktop/sites/goopie/framework/web/widgets/COutputProcessor.php(45): CContentDecorator->processOutput('<div id="conten...')
+#14 /Users/lfisher/Desktop/sites/goopie/framework/web/CBaseController.php(207): COutputProcessor->run()
+#15 /Users/lfisher/Desktop/sites/goopie/framework/web/CBaseController.php(301): CBaseController->endWidget('CContentDecorat...')
+#16 /Users/lfisher/Desktop/sites/goopie/webapp/protected/views/layouts/column1.php(6): CBaseController->endContent()
+#17 /Users/lfisher/Desktop/sites/goopie/framework/web/CBaseController.php(127): require('/Users/lfisher/...')
+#18 /Users/lfisher/Desktop/sites/goopie/framework/web/CBaseController.php(96): CBaseController->renderInternal('/Users/lfisher/...', Array, true)
+#19 /Users/lfisher/Desktop/sites/goopie/framework/web/CController.php(785): CBaseController->renderFile('/Users/lfisher/...', Array, true)
+#20 /Users/lfisher/Desktop/sites/goopie/webapp/protected/controllers/SiteController.php(32): CController->render('index')
+#21 /Users/lfisher/Desktop/sites/goopie/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#22 /Users/lfisher/Desktop/sites/goopie/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#23 /Users/lfisher/Desktop/sites/goopie/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#24 /Users/lfisher/Desktop/sites/goopie/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 /Users/lfisher/Desktop/sites/goopie/framework/web/CWebApplication.php(283): CController->run('index')
+#26 /Users/lfisher/Desktop/sites/goopie/framework/web/CWebApplication.php(142): CWebApplication->runController('site/index')
+#27 /Users/lfisher/Desktop/sites/goopie/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#28 /Users/lfisher/Desktop/sites/goopie/webapp/index.php(13): CApplication->run()
+#29 {main}
+REQUEST_URI=/index.php?r=site/index
+HTTP_REFERER=http://local.www.goopie.com/index.php?r=site/page&view=about
+---
+2012/08/31 17:47:41 [error] [php] strpos() expects parameter 1 to be string, array given (/Users/lfisher/Desktop/sites/goopie/framework/web/helpers/CHtml.php:2106)
+Stack trace:
+#0 /Users/lfisher/Desktop/sites/goopie/framework/web/helpers/CHtml.php(1457): resolveNameID()
+#1 /Users/lfisher/Desktop/sites/goopie/framework/web/widgets/CActiveForm.php(748): activeCheckBox()
+#2 /Users/lfisher/Desktop/sites/goopie/webapp/protected/views/site/login/_login.php(37): CActiveForm->checkBox()
+#3 /Users/lfisher/Desktop/sites/goopie/framework/web/CBaseController.php(127): require()
+#4 /Users/lfisher/Desktop/sites/goopie/framework/web/CBaseController.php(96): SiteController->renderInternal()
+#5 /Users/lfisher/Desktop/sites/goopie/framework/web/CController.php(870): SiteController->renderFile()
+#6 /Users/lfisher/Desktop/sites/goopie/webapp/protected/views/layouts/main.php(24): SiteController->renderPartial()
+#7 /Users/lfisher/Desktop/sites/goopie/framework/web/CBaseController.php(127): require()
+#8 /Users/lfisher/Desktop/sites/goopie/framework/web/CBaseController.php(96): SiteController->renderInternal()
+#9 /Users/lfisher/Desktop/sites/goopie/framework/web/widgets/CContentDecorator.php(77): SiteController->renderFile()
+#10 /Users/lfisher/Desktop/sites/goopie/framework/web/widgets/CContentDecorator.php(55): CContentDecorator->decorate()
+#11 /Users/lfisher/Desktop/sites/goopie/framework/web/widgets/COutputProcessor.php(45): CContentDecorator->processOutput()
+#12 /Users/lfisher/Desktop/sites/goopie/framework/web/CBaseController.php(207): CContentDecorator->run()
+#13 /Users/lfisher/Desktop/sites/goopie/framework/web/CBaseController.php(301): SiteController->endWidget()
+#14 /Users/lfisher/Desktop/sites/goopie/webapp/protected/views/layouts/column1.php(6): SiteController->endContent()
+#15 /Users/lfisher/Desktop/sites/goopie/framework/web/CBaseController.php(127): require()
+#16 /Users/lfisher/Desktop/sites/goopie/framework/web/CBaseController.php(96): SiteController->renderInternal()
+#17 /Users/lfisher/Desktop/sites/goopie/framework/web/CController.php(785): SiteController->renderFile()
+#18 /Users/lfisher/Desktop/sites/goopie/webapp/protected/controllers/SiteController.php(32): SiteController->render()
+#19 /Users/lfisher/Desktop/sites/goopie/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#20 /Users/lfisher/Desktop/sites/goopie/framework/web/CController.php(309): CInlineAction->runWithParams()
+#21 /Users/lfisher/Desktop/sites/goopie/framework/web/CController.php(287): SiteController->runAction()
+#22 /Users/lfisher/Desktop/sites/goopie/framework/web/CController.php(266): SiteController->runActionWithFilters()
+#23 /Users/lfisher/Desktop/sites/goopie/framework/web/CWebApplication.php(283): SiteController->run()
+#24 /Users/lfisher/Desktop/sites/goopie/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#25 /Users/lfisher/Desktop/sites/goopie/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#26 /Users/lfisher/Desktop/sites/goopie/webapp/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=site/index
+in /Users/lfisher/Desktop/sites/goopie/webapp/protected/views/site/login/_login.php (37)
+in /Users/lfisher/Desktop/sites/goopie/webapp/protected/views/layouts/main.php (24)
+in /Users/lfisher/Desktop/sites/goopie/webapp/protected/views/layouts/column1.php (6)
+2012/09/06 16:24:49 [error] [exception.CException] exception 'CException' with message 'CAssetManager.basePath "/Users/lfisher/Desktop/sites/framerbot/webapp/assets" is invalid. Please make sure the directory exists and is writable by the Web server process.' in /Users/lfisher/Desktop/sites/framerbot/framework/web/CAssetManager.php:128
+Stack trace:
+#0 /Users/lfisher/Desktop/sites/framerbot/framework/web/CAssetManager.php(113): CAssetManager->setBasePath('/Users/lfisher/...')
+#1 /Users/lfisher/Desktop/sites/framerbot/framework/web/CAssetManager.php(235): CAssetManager->getBasePath()
+#2 /Users/lfisher/Desktop/sites/framerbot/framework/web/CClientScript.php(463): CAssetManager->publish('/Users/lfisher/...')
+#3 /Users/lfisher/Desktop/sites/framerbot/framework/web/CClientScript.php(500): CClientScript->getCoreScriptUrl()
+#4 /Users/lfisher/Desktop/sites/framerbot/framework/web/CClientScript.php(316): CClientScript->getPackageBaseUrl('jquery')
+#5 /Users/lfisher/Desktop/sites/framerbot/framework/web/CClientScript.php(209): CClientScript->renderCoreScripts()
+#6 /Users/lfisher/Desktop/sites/framerbot/framework/web/CController.php(352): CClientScript->render('<!DOCTYPE html ...')
+#7 /Users/lfisher/Desktop/sites/framerbot/framework/web/CController.php(789): CController->processOutput('<!DOCTYPE html ...')
+#8 /Users/lfisher/Desktop/sites/framerbot/webapp/protected/controllers/SiteController.php(32): CController->render('index')
+#9 /Users/lfisher/Desktop/sites/framerbot/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#10 /Users/lfisher/Desktop/sites/framerbot/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /Users/lfisher/Desktop/sites/framerbot/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#12 /Users/lfisher/Desktop/sites/framerbot/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /Users/lfisher/Desktop/sites/framerbot/framework/web/CWebApplication.php(283): CController->run('')
+#14 /Users/lfisher/Desktop/sites/framerbot/framework/web/CWebApplication.php(142): CWebApplication->runController('')
+#15 /Users/lfisher/Desktop/sites/framerbot/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /Users/lfisher/Desktop/sites/framerbot/webapp/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/
+---
+2012/11/17 03:47:49 [error] [exception.CException] exception 'CException' with message 'CAssetManager.basePath "/Applications/XAMPP/xamppfiles/htdocs/rsvpme/webapp/assets" is invalid. Please make sure the directory exists and is writable by the Web server process.' in /Applications/XAMPP/xamppfiles/htdocs/rsvpme/framework/web/CAssetManager.php:128
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/rsvpme/framework/web/CAssetManager.php(113): CAssetManager->setBasePath('/Applications/X...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/rsvpme/framework/web/CAssetManager.php(235): CAssetManager->getBasePath()
+#2 /Applications/XAMPP/xamppfiles/htdocs/rsvpme/framework/web/CClientScript.php(463): CAssetManager->publish('/Applications/X...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/rsvpme/framework/web/CClientScript.php(500): CClientScript->getCoreScriptUrl()
+#4 /Applications/XAMPP/xamppfiles/htdocs/rsvpme/framework/web/CClientScript.php(316): CClientScript->getPackageBaseUrl('jquery')
+#5 /Applications/XAMPP/xamppfiles/htdocs/rsvpme/framework/web/CClientScript.php(209): CClientScript->renderCoreScripts()
+#6 /Applications/XAMPP/xamppfiles/htdocs/rsvpme/framework/web/CController.php(352): CClientScript->render('<!DOCTYPE html ...')
+#7 /Applications/XAMPP/xamppfiles/htdocs/rsvpme/framework/web/CController.php(789): CController->processOutput('<!DOCTYPE html ...')
+#8 /Applications/XAMPP/xamppfiles/htdocs/rsvpme/webapp/protected/controllers/SiteController.php(32): CController->render('index')
+#9 /Applications/XAMPP/xamppfiles/htdocs/rsvpme/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#10 /Applications/XAMPP/xamppfiles/htdocs/rsvpme/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /Applications/XAMPP/xamppfiles/htdocs/rsvpme/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#12 /Applications/XAMPP/xamppfiles/htdocs/rsvpme/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /Applications/XAMPP/xamppfiles/htdocs/rsvpme/framework/web/CWebApplication.php(283): CController->run('')
+#14 /Applications/XAMPP/xamppfiles/htdocs/rsvpme/framework/web/CWebApplication.php(142): CWebApplication->runController('')
+#15 /Applications/XAMPP/xamppfiles/htdocs/rsvpme/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /Applications/XAMPP/xamppfiles/htdocs/rsvpme/webapp/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/rsvpme/webapp/
+---
+2012/11/17 03:52:24 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: YES)' in /Applications/XAMPP/xamppfiles/htdocs/rsvpme/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/rsvpme/framework/db/CDbConnection.php(331): CDbConnection->open()
+#1 /Applications/XAMPP/xamppfiles/htdocs/rsvpme/framework/db/CDbConnection.php(309): CDbConnection->setActive(true)
+#2 /Applications/XAMPP/xamppfiles/htdocs/rsvpme/framework/base/CModule.php(388): CDbConnection->init()
+#3 /Applications/XAMPP/xamppfiles/htdocs/rsvpme/framework/base/CApplication.php(431): CModule->getComponent('db')
+#4 /Applications/XAMPP/xamppfiles/htdocs/rsvpme/framework/db/ar/CActiveRecord.php(624): CApplication->getDb()
+#5 /Applications/XAMPP/xamppfiles/htdocs/rsvpme/framework/db/ar/CActiveRecord.php(2311): CActiveRecord->getDbConnection()
+#6 /Applications/XAMPP/xamppfiles/htdocs/rsvpme/framework/db/ar/CActiveRecord.php(388): CActiveRecordMetaData->__construct(Object(User))
+#7 /Applications/XAMPP/xamppfiles/htdocs/rsvpme/framework/db/ar/CActiveRecord.php(403): CActiveRecord::model('User')
+#8 /Applications/XAMPP/xamppfiles/htdocs/rsvpme/framework/db/ar/CActiveRecord.php(78): CActiveRecord->getMetaData()
+#9 /Applications/XAMPP/xamppfiles/htdocs/rsvpme/webapp/protected/controllers/UserController.php(65): CActiveRecord->__construct()
+#10 /Applications/XAMPP/xamppfiles/htdocs/rsvpme/framework/web/actions/CInlineAction.php(50): UserController->actionCreate()
+#11 /Applications/XAMPP/xamppfiles/htdocs/rsvpme/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#12 /Applications/XAMPP/xamppfiles/htdocs/rsvpme/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#13 /Applications/XAMPP/xamppfiles/htdocs/rsvpme/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#14 /Applications/XAMPP/xamppfiles/htdocs/rsvpme/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#15 /Applications/XAMPP/xamppfiles/htdocs/rsvpme/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#16 /Applications/XAMPP/xamppfiles/htdocs/rsvpme/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#17 /Applications/XAMPP/xamppfiles/htdocs/rsvpme/framework/web/CController.php(292): CFilterChain->run()
+#18 /Applications/XAMPP/xamppfiles/htdocs/rsvpme/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 /Applications/XAMPP/xamppfiles/htdocs/rsvpme/framework/web/CWebApplication.php(283): CController->run('create')
+#20 /Applications/XAMPP/xamppfiles/htdocs/rsvpme/framework/web/CWebApplication.php(142): CWebApplication->runController('user/create')
+#21 /Applications/XAMPP/xamppfiles/htdocs/rsvpme/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#22 /Applications/XAMPP/xamppfiles/htdocs/rsvpme/webapp/index.php(13): CApplication->run()
+#23 {main}
+REQUEST_URI=/rsvpme/webapp/index.php?r=user/create
+HTTP_REFERER=http://local.www.rsvpme.com/rsvpme/webapp/index.php?r=site/index
+---
