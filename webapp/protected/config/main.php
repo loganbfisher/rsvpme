@@ -49,7 +49,7 @@ return array(
 		'db'=>array(
 				'connectionString'=>'mysql:host=localhost;dbname=rsvpme',
 				'username'=>'root',
-				'password'=>'root',
+				'password'=>'',
 				'emulatePrepare'=>true,  // needed by some MySQL installations
 				'charset' => 'utf8',
 		),
