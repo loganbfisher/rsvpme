@@ -1,10 +1,11 @@
 <div class="module-wrapper">
   <div class="title-wrapper">
-    <h1 class="page-title">RSVP</h1>
+    <h1 class="page-title">Create an event</h1>
     <div class="module-container">
       <div class="padding">
-        <?php echo $this->renderPartial('/entries/_form', array('model' => new Entry())); ?>
+        <?php echo $this->renderPartial('_form', array('model'=>$model)); ?>
       </div>
     </div>
   </div>
 </div>
+

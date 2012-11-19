@@ -13,9 +13,12 @@ $this->menu=array(
 );
 ?>
 <div class="module-wrapper">
-  <div class="module-container">
-    <div class="padding">
-      <?php echo $this->renderPartial('_form', array('model'=>$model)); ?>
+  <div class="title-wrapper">
+    <h1 class="page-title">RSVP</h1>
+    <div class="module-container">
+      <div class="padding">
+        <?php echo $this->renderPartial('_form', array('model'=>$model)); ?>
+      </div>
     </div>
   </div>
 </div>
