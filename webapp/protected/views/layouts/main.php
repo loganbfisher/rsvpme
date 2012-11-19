@@ -23,12 +23,6 @@
     <script>
       $(document).ready(function(){
 
-        $('.login-wrapper').hide();
-        $('#mainmenu').hide();
-        $('.login-text').click(function(){
-          $('.login-wrapper').slideToggle();
-        });
-
         var defaultText = $('input').attr('value');
         $('input').focus(function(){
           $(this).attr('value','');
@@ -36,12 +30,6 @@
 
       });
     </script>
-    <div class="login-wrapper">
-      <div class="login-container">
-        <?php echo $this->renderPartial('/site/login/_login', array('model' => new LoginForm())); ?>
-      </div>
-      <div class="clear"></div>
-    </div>
     <div class="header_wrapper"><?php echo $this->renderPartial('/site/global/_header'); ?></div>
     <div class="container" id="page">
       <?php echo $content; ?>
