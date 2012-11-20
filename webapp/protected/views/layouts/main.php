@@ -30,11 +30,11 @@
 
       });
     </script>
-    <div class="header_wrapper"><?php echo $this->renderPartial('/site/global/_header'); ?></div>
+    <div class="header_wrapper"><?php echo $this->renderPartial('//site/global/_header'); ?></div>
     <div class="container" id="page">
       <?php echo $content; ?>
       <div class="clear"></div>
-      <?php echo $this->renderPartial('/site/global/_footer'); ?>
+      <?php echo $this->renderPartial('//site/global/_footer'); ?>
     </div><!-- page -->
   </body>
 </html>
