@@ -52,6 +52,3 @@ $this->breadcrumbs = array(
     </div>
   </div>
 </div>
-<div class="form">
-
-</div><!-- form -->
