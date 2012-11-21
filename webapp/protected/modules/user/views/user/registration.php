@@ -94,7 +94,7 @@ $this->breadcrumbs=array(
 	<?php endif; ?>
 
 	<div class="row submit">
-		<?php echo CHtml::submitButton(UserModule::t("Register")); ?>
+		<?php echo CHtml::submitButton(UserModule::t("Register"),array('class'=>'submit')); ?>
 	</div>
 
 <?php $this->endWidget(); ?>
