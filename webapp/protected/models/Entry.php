@@ -64,6 +64,7 @@ class Entry extends CActiveRecord
 		return array(
 			'first_name' => 'First Name',
 			'last_name' => 'Last Name',
+                        'confirmation_code' => 'Confirmation Code'
 		);
 	}
 
@@ -80,6 +81,7 @@ class Entry extends CActiveRecord
 
 		$criteria->compare('first_name',$this->first_name,true);
 		$criteria->compare('last_name',$this->last_name,true);
+                $criteria->compare('confirmation_code',$this->confirmation_code,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
