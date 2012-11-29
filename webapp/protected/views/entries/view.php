@@ -24,6 +24,7 @@ $this->menu=array(
 		'entry_id',
 		'first_name',
 		'last_name',
+                'additional_guests',
 		'confirmation_code',
 	),
 )); ?>
