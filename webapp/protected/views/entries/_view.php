@@ -17,6 +17,10 @@
 	<?php echo CHtml::encode($data->last_name); ?>
 	<br />
 
+        <b><?php echo CHtml::encode($data->getAttributeLabel('additional_guests')); ?>:</b>
+	<?php echo CHtml::encode($data->additional_guests); ?>
+	<br />
+
 	<b><?php echo CHtml::encode($data->getAttributeLabel('confirmation_code')); ?>:</b>
 	<?php echo CHtml::encode($data->confirmation_code); ?>
 	<br />

@@ -48,6 +48,7 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 		'entry_id',
 		'first_name',
 		'last_name',
+                'additional_guests',
 		'confirmation_code',
 		array(
 			'class'=>'CButtonColumn',
