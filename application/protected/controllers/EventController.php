@@ -32,7 +32,7 @@ class EventController extends Controller
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('create','update'),
+				'actions'=>array('create','update','delete'),
 				'users'=>array('@'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -51,6 +51,7 @@ class EventController extends Controller
 	 */
 	public function actionView($id)
 	{
+
 		$this->render('view',array(
 			'model'=>$this->loadModel($id),
 		));
@@ -70,6 +71,7 @@ class EventController extends Controller
 		if(isset($_POST['Event']))
 		{
 			$model->attributes=$_POST['Event'];
+                        $model->user_id = Yii::app()->user->getId();
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->event_id));
 		}
@@ -94,6 +96,7 @@ class EventController extends Controller
 		if(isset($_POST['Event']))
 		{
 			$model->attributes=$_POST['Event'];
+                        $model->user_id = Yii::app()->user->getId();
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->event_id));
 		}
@@ -122,9 +125,17 @@ class EventController extends Controller
 	 */
 	public function actionIndex()
 	{
-		$dataProvider=new CActiveDataProvider('Event');
+          /** this pulls the events for the user **/
+                $criteria = new CDbCriteria;
+                $criteria->condition = 'user_id = :user_id';
+                $criteria->params = array(
+                  ':user_id' => Yii::app()->user->getId(),
+                );
+                $dataProvider = new CActiveDataProvider('Event', array(
+                'criteria'=>$criteria,
+                ));
 		$this->render('index',array(
-			'dataProvider'=>$dataProvider,
+                  'dataProvider'=>$dataProvider,
 		));
 	}
 
@@ -150,7 +161,10 @@ class EventController extends Controller
 	 */
 	public function loadModel($id)
 	{
-		$model=Event::model()->findByPk($id);
+		$model=Event::model()->findByAttributes(array(
+                    'event_id'=>$id,
+                    'user_id'=>Yii::app()->user->getId(),));
+
 		if($model===null)
 			throw new CHttpException(404,'The requested page does not exist.');
 		return $model;

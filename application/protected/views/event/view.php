@@ -17,7 +17,7 @@ $this->menu=array(
 ?>
 
 <h1>View Event #<?php echo $model->event_id; ?></h1>
-
+<?= CHtml::link('Edit Event', array('update', 'id'=>$model->event_id), array('class' => 'login-text fright')); ?>
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,
 	'attributes'=>array(
