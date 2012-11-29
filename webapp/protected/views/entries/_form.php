@@ -24,6 +24,18 @@
 		<?php echo $form->error($model,'last_name'); ?>
 	</div>
 
+        <div class="row">
+		<?php echo $form->labelEx($model,'additional_guests'); ?>
+		<?php echo $form->textField($model,'additional_guests',array('size'=>60,'maxlength'=>255)); ?>
+		<?php echo $form->error($model,'additional_guests'); ?>
+	</div>
+
+<div class="row">
+		<?php echo $form->labelEx($model,'confirmation_code'); ?>
+		<?php echo $form->textField($model,'confirmation_code',array('size'=>60,'maxlength'=>255)); ?>
+		<?php echo $form->error($model,'confirmation_code'); ?>
+	</div>
+
 
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'RSVP' : 'Save',array('class'=>'submit')); ?>
 
