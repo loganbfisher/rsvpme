@@ -45,6 +45,10 @@
 		<?php echo $form->label($model,'guest_messsage'); ?>
 		<?php echo $form->textField($model,'guest_messsage',array('size'=>60,'maxlength'=>255)); ?>
 	</div>
+        <div class="row">
+		<?php echo $form->label($model,'confirmation_code'); ?>
+		<?php echo $form->textField($model,'confirmation_code',array('size'=>60,'maxlength'=>255)); ?>
+	</div>
 
 	<div class="row buttons">
 		<?php echo CHtml::submitButton('Search'); ?>

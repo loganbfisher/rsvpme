@@ -28,5 +28,6 @@ $this->menu=array(
 		'day',
 		'time',
 		'guest_messsage',
+                'confirmation_code',
 	),
 )); ?>

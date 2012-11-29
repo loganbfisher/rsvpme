@@ -21,9 +21,5 @@
 	<?php echo CHtml::encode($data->additional_guests); ?>
 	<br />
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('confirmation_code')); ?>:</b>
-	<?php echo CHtml::encode($data->confirmation_code); ?>
-	<br />
-
 
 </div>
