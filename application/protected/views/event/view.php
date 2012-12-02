@@ -16,18 +16,63 @@ $this->menu=array(
 );
 ?>
 
-<h1>View Event #<?php echo $model->event_id; ?></h1>
-<?= CHtml::link('Edit Event', array('update', 'id'=>$model->event_id), array('class' => 'login-text fright')); ?>
-<?php $this->widget('zii.widgets.CDetailView', array(
-	'data'=>$model,
-	'attributes'=>array(
-		'event_id',
-		'name',
-		'details',
-		'where',
-		'day',
-		'time',
-		'guest_messsage',
-                'confirmation_code',
-	),
-)); ?>
+
+
+<h1><?php echo $model->name; ?> | <?= CHtml::link('Edit Event', array('update', 'id'=>$model->event_id), array('class' => '')); ?></h1>
+<table class="default">
+  <tbody>
+    <tr>
+      <td class="title">Event Name</td>
+      <td><?= $model->name;?></td>
+    </tr>
+    <tr>
+      <td class="title">Details</td>
+      <td><?= $model->details;?></td>
+    </tr>
+    <tr>
+      <td class="title">Where</td>
+      <td><?= $model->where;?></td>
+    </tr>
+    <tr>
+      <td class="title">Day</td>
+      <td><?= $model->day;?></td>
+    </tr>
+    <tr>
+      <td class="title">Time</td>
+      <td><?= $model->time;?></td>
+    </tr>
+    <tr>
+      <td class="title">Guest Message</td>
+      <td><?= $model->guest_messsage;?></td>
+    </tr>
+    <tr>
+      <td class="title">Confirmation Code</td>
+      <td><?= $model->confirmation_code;?></td>
+    </tr>
+
+  </tbody>
+</table>
+
+<h1>Guests</h1>
+<table class="default">
+  <thead>
+    <tr>
+      <td>First Name</td>
+      <td>Last Name</td>
+      <td>Additional Guests</td>
+    </tr>
+    <tbody>
+      <? foreach($model->entrys as $key => $value): ?>
+      <tr>
+        <td><?=Chtml::encode($value['first_name'])?></td>
+        <td><?=Chtml::encode($value['last_name'])?></td>
+        <td><?=Chtml::encode($value['additional_guests'])?></td>
+      </tr>
+      <? endforeach ?>
+    </tbody>
+  </thead>
+</table>
+
+
+
+

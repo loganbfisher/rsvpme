@@ -30,6 +30,11 @@
 		<?php echo $form->error($model,'additional_guests'); ?>
 	</div>
 
+        <div class="row">
+                <label for="confirmation_code">Confirmation Code</label>
+		<?php echo CHtml::textField('confirmation_code'); ?>
+	</div>
+
 
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'RSVP' : 'Save',array('class'=>'submit')); ?>
 
