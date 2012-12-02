@@ -211,10 +211,41 @@ input[type='submit'].submit {
 .note {display: none;}
 .rememberMe {margin-top: 10px;}
 .rememberMe label {font-size: 14px !important;}
-.container {position: relative;}
+.container {margin-top: 20px; position: relative;}
 .authoring-info {position: absolute; right: 50px; top: 20px;}
 .authoring-info ul {margin: 0;}
 .authoring-info ul li {list-style-type: none;}
 .authoring-info ul li a {text-decoration: none; color: #ccc; text-shadow: 1px 1px #fff;}
 .authoring-info ul li a:hover {color: #000;}
+
+table.default {background: #fff; border: 1px solid #ccc;-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+border-radius: 5px; overflow: hidden;}
+table.default thead {
+background: #45484d;
+background: -moz-linear-gradient(top,  #45484d 0%, #000000 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#45484d), color-stop(100%,#000000));
+background: -webkit-linear-gradient(top,  #45484d 0%,#000000 100%);
+background: -o-linear-gradient(top,  #45484d 0%,#000000 100%);
+background: -ms-linear-gradient(top,  #45484d 0%,#000000 100%);
+background: linear-gradient(to bottom,  #45484d 0%,#000000 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#000000',GradientType=0 );
+color: #fff;
+}
+table.default thead tr {}
+table.default thead tr td {padding: 10px}
+table.default tbody {}
+table.default tbody tr {}
+table.default tbody tr:nth-child(even) {background: #fff;}
+table.default tbody tr:nth-child(odd) {background: #f2f2f2;}
+table.default tbody tr td {padding: 10px;}
+table.default tbody tr td.title {background: #45484d;
+background: -moz-linear-gradient(top,  #45484d 0%, #000000 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#45484d), color-stop(100%,#000000));
+background: -webkit-linear-gradient(top,  #45484d 0%,#000000 100%);
+background: -o-linear-gradient(top,  #45484d 0%,#000000 100%);
+background: -ms-linear-gradient(top,  #45484d 0%,#000000 100%);
+background: linear-gradient(to bottom,  #45484d 0%,#000000 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#000000',GradientType=0 );
+color: #fff; width: 105px;}
 

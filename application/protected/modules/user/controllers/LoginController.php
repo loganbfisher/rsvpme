@@ -21,7 +21,7 @@ class LoginController extends Controller
 					if (Yii::app()->user->returnUrl=='/index.php')
 						$this->redirect(Yii::app()->controller->module->returnUrl);
 					else
-						$this->redirect(Yii::app()->user->returnUrl);
+						$this->redirect(array('/user/profile'));
 				}
 			}
 			// display the login form
@@ -29,7 +29,7 @@ class LoginController extends Controller
 		} else
 			$this->redirect(Yii::app()->controller->module->returnUrl);
 	}
-	
+
 	private function lastViset() {
 		$lastVisit = User::model()->notsafe()->findByPk(Yii::app()->user->id);
 		$lastVisit->lastvisit = time();
