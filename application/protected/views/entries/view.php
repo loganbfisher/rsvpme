@@ -25,6 +25,5 @@ $this->menu=array(
 		'first_name',
 		'last_name',
                 'additional_guests',
-		'confirmation_code',
 	),
 )); ?>

@@ -125,7 +125,7 @@ class EventController extends Controller
 	 */
 	public function actionIndex()
 	{
-          /** this pulls the events for the user **/
+                /** this pulls the events for the user **/
                 $criteria = new CDbCriteria;
                 $criteria->condition = 'user_id = :user_id';
                 $criteria->params = array(
@@ -134,6 +134,7 @@ class EventController extends Controller
                 $dataProvider = new CActiveDataProvider('Event', array(
                 'criteria'=>$criteria,
                 ));
+
 		$this->render('index',array(
                   'dataProvider'=>$dataProvider,
 		));

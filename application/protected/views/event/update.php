@@ -15,7 +15,14 @@ $this->menu=array(
 	array('label'=>'Manage Event', 'url'=>array('admin')),
 );
 ?>
-
-<h1>Update Event <?php echo $model->event_id; ?></h1>
-
-<?php echo $this->renderPartial('_form', array('model'=>$model)); ?>
+<?php //echo $model->name; ?>
+<div class="module-wrapper">
+  <div class="title-wrapper">
+    <h1 class="page-title">Edit</h1>
+    <div class="module-container">
+      <div class="padding">
+        <?php echo $this->renderPartial('_form', array('model'=>$model)); ?>
+      </div>
+    </div>
+  </div>
+</div>

@@ -38,7 +38,6 @@ class Entry extends CActiveRecord
 		return array(
 			array('first_name, last_name', 'required'),
                         array('additional_guests', 'numerical', 'integerOnly'=>true),
-			array('confirmation_code', 'numerical', 'integerOnly'=>true),
 			array('first_name, last_name', 'length', 'max'=>255),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
@@ -65,7 +64,6 @@ class Entry extends CActiveRecord
 		return array(
 			'first_name' => 'First Name',
 			'last_name' => 'Last Name',
-                        'confirmation_code' => 'Confirmation Code',
                         'additional_guests' => 'Plus'
 		);
 	}
@@ -83,7 +81,6 @@ class Entry extends CActiveRecord
 
 		$criteria->compare('first_name',$this->first_name,true);
 		$criteria->compare('last_name',$this->last_name,true);
-                $criteria->compare('confirmation_code',$this->confirmation_code,true);
                 $criteria->compare('additional_guests',$this->additional_guests,true);
 
 		return new CActiveDataProvider($this, array(

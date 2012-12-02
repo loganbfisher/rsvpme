@@ -29,6 +29,7 @@
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('guest_messsage')); ?>:</b>
+        <b><?php echo CHtml::encode($data->getAttributeLabel('confirmation_code')); ?>:</b>
 	<?php echo CHtml::encode($data->guest_messsage, array('class'=>'submit')); ?>
 	<br />
 

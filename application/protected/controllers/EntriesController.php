@@ -70,6 +70,18 @@ class EntriesController extends Controller
 		if(isset($_POST['Entry']))
 		{
 			$model->attributes=$_POST['Entry'];
+                        /* This looks up the posted confirmation code on the entry inside the event table */
+                        $event=Event::model()->findByAttributes(array(
+                            'confirmation_code' => $_POST['confirmation_code']));
+
+                        if($event===null)
+                                throw new CHttpException(404,'The requested page does not exist.');
+                        /* end of lookup */
+
+                        /* this posts the matched event id for the confirmation code that was entered to the user. */
+                        $model->event_id = $event->event_id;
+                        /* end of event id post */
+                        
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->entry_id));
 		}

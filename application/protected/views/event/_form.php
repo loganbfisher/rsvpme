@@ -50,6 +50,12 @@
 		<?php echo $form->error($model,'guest_messsage'); ?>
 	</div>
 
+        <div class="row">
+		<?php echo $form->labelEx($model,'confirmation_code'); ?>
+		<?php echo $form->textField($model,'confirmation_code',array('size'=>60,'maxlength'=>255)); ?>
+		<?php echo $form->error($model,'confirmation_code'); ?>
+	</div>
+
 	<div class="row buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save',array('class'=>'submit')); ?>
 	</div>
