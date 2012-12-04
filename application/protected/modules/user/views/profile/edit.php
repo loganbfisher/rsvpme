@@ -30,14 +30,14 @@ $this->menu=array(
 
 	<?php echo $form->errorSummary(array($model,$profile)); ?>
 
-<?php 
+<?php
 		$profileFields=$profile->getFields();
 		if ($profileFields) {
 			foreach($profileFields as $field) {
 			?>
 	<div class="row">
 		<?php echo $form->labelEx($profile,$field->varname);
-		
+
 		if ($widgetEdit = $field->widgetEdit($profile)) {
 			echo $widgetEdit;
 		} elseif ($field->range) {
@@ -48,7 +48,7 @@ $this->menu=array(
 			echo $form->textField($profile,$field->varname,array('size'=>60,'maxlength'=>(($field->field_size)?$field->field_size:255)));
 		}
 		echo $form->error($profile,$field->varname); ?>
-	</div>	
+	</div>
 			<?php
 			}
 		}
@@ -63,6 +63,12 @@ $this->menu=array(
 		<?php echo $form->labelEx($model,'email'); ?>
 		<?php echo $form->textField($model,'email',array('size'=>60,'maxlength'=>128)); ?>
 		<?php echo $form->error($model,'email'); ?>
+	</div>
+
+        <div class="row">
+		<?php echo $form->labelEx($model,'profile_photo'); ?>
+		<?php echo Chtml::activeFileField($model,'profile_photo'); ?>
+		<?php echo $form->error($model,'profile_photo'); ?>
 	</div>
 
 	<div class="row buttons">

@@ -8,6 +8,7 @@
 <?php $form=$this->beginWidget('CActiveForm', array(
 	'id'=>'event-form',
 	'enableAjaxValidation'=>false,
+        'htmlOptions' => array('enctype' => 'multipart/form-data'),
 )); ?>
 
 	<p class="note">Fields with <span class="required">*</span> are required.</p>
@@ -54,6 +55,12 @@
 		<?php echo $form->labelEx($model,'confirmation_code'); ?>
 		<?php echo $form->textField($model,'confirmation_code',array('size'=>60,'maxlength'=>255)); ?>
 		<?php echo $form->error($model,'confirmation_code'); ?>
+	</div>
+
+        <div class="row">
+		<?php echo $form->labelEx($model,'event_photo'); ?>
+		<?php echo Chtml::activeFileField($model,'event_photo'); ?>
+		<?php echo $form->error($model,'event_photo'); ?>
 	</div>
 
 	<div class="row buttons">
