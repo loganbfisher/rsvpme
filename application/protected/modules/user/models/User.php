@@ -5,10 +5,10 @@ class User extends CActiveRecord
 	const STATUS_NOACTIVE=0;
 	const STATUS_ACTIVE=1;
 	const STATUS_BANNED=-1;
-	
+
 	//TODO: Delete for next version (backward compatibility)
 	const STATUS_BANED=-1;
-	
+
 	/**
 	 * The followings are the available columns in table 'users':
 	 * @var integer $id
@@ -98,13 +98,14 @@ class User extends CActiveRecord
 			'activkey' => UserModule::t("activation key"),
 			'createtime' => UserModule::t("Registration date"),
 			'create_at' => UserModule::t("Registration date"),
-			
+
 			'lastvisit_at' => UserModule::t("Last visit"),
 			'superuser' => UserModule::t("Superuser"),
 			'status' => UserModule::t("Status"),
+                        'profile_photo' => UserModule::t("Profile Photo"),
 		);
 	}
-	
+
 	public function scopes()
     {
         return array(
@@ -121,19 +122,19 @@ class User extends CActiveRecord
                 'condition'=>'superuser=1',
             ),
             'notsafe'=>array(
-            	'select' => 'id, username, password, email, activkey, create_at, lastvisit_at, superuser, status',
+            	'select' => 'id, username, password, email, activkey, create_at, lastvisit_at, superuser, status, profile_photo',
             ),
         );
     }
-	
+
 	public function defaultScope()
     {
         return CMap::mergeArray(Yii::app()->getModule('user')->defaultScope,array(
             'alias'=>'user',
-            'select' => 'user.id, user.username, user.email, user.create_at, user.lastvisit_at, user.superuser, user.status',
+            'select' => 'user.id, user.username, user.email, user.create_at, user.lastvisit_at, user.superuser, user.status, user.profile_photo',
         ));
     }
-	
+
 	public static function itemAlias($type,$code=NULL) {
 		$_items = array(
 			'UserStatus' => array(
@@ -151,7 +152,7 @@ class User extends CActiveRecord
 		else
 			return isset($_items[$type]) ? $_items[$type] : false;
 	}
-	
+
 /**
      * Retrieves a list of models based on the current search/filter conditions.
      * @return CActiveDataProvider the data provider that can return the models based on the search/filter conditions.
@@ -162,7 +163,7 @@ class User extends CActiveRecord
         // should not be searched.
 
         $criteria=new CDbCriteria;
-        
+
         $criteria->compare('id',$this->id);
         $criteria->compare('username',$this->username,true);
         $criteria->compare('password',$this->password);
@@ -172,6 +173,7 @@ class User extends CActiveRecord
         $criteria->compare('lastvisit_at',$this->lastvisit_at);
         $criteria->compare('superuser',$this->superuser);
         $criteria->compare('status',$this->status);
+        $criteria->compare('profile_photo',$this->profile_photo);
 
         return new CActiveDataProvider(get_class($this), array(
             'criteria'=>$criteria,

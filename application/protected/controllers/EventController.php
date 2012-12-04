@@ -63,15 +63,35 @@ class EventController extends Controller
 	 */
 	public function actionCreate()
 	{
-		$model=new Event;
+                Yii::import('ext.euploadedimage.EUploadedImage', true);
+                $model=new Event;
+
+
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
+
 		if(isset($_POST['Event']))
 		{
 			$model->attributes=$_POST['Event'];
+
                         $model->user_id = Yii::app()->user->getId();
+
+                        $model->event_photo = EUploadedImage::getInstance($model,'event_photo');
+                        $model->event_photo->maxWidth = 400;
+                        $model->event_photo->maxHeight = 200;
+
+                        $model->event_photo->thumb = array(
+                            'maxWidth' => 50,
+                            'maxHeight' => 50,
+                            'dir' => 'thumbs',
+                            'prefix' => 'asdf_',
+                        );
+
+                        if ($model->event_photo->saveAs('images/uploads/'.$model->event_photo));
+
+
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->event_id));
 		}

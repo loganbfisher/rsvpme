@@ -15,7 +15,9 @@ return array(
         'application.components.*',
         'application.modules.user.models.*',
         'application.modules.user.components.*',
+        'application.helpers.*',
     ),
+
     'modules' => array(
         'user'=>array(
             # encrypting method (php hash function)
