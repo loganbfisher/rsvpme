@@ -32,18 +32,6 @@
     </script>
     <div class="header_wrapper"><?php echo $this->renderPartial('//site/global/_header'); ?></div>
     <div class="container" id="page">
-      <div class="authoring-info">
-        <?php
-        $this->widget('zii.widgets.CMenu', array(
-          'items'=>array(
-              array('url'=>Yii::app()->getModule('user')->loginUrl, 'label'=>Yii::app()->getModule('user')->t("Login"), 'visible'=>Yii::app()->user->isGuest),
-              array('url'=>Yii::app()->getModule('user')->registrationUrl, 'label'=>Yii::app()->getModule('user')->t("Register"), 'visible'=>Yii::app()->user->isGuest),
-              array('url'=>Yii::app()->getModule('user')->profileUrl, 'label'=>Yii::app()->getModule('user')->t("Profile"), 'visible'=>!Yii::app()->user->isGuest),
-              array('url'=>Yii::app()->getModule('user')->logoutUrl, 'label'=>Yii::app()->getModule('user')->t("Logout").' ('.Yii::app()->user->name.')', 'visible'=>!Yii::app()->user->isGuest),
-          ),
-      ));
-        ?>
-      </div>
       <?php echo $content; ?>
       <div class="clear"></div>
       <?php echo $this->renderPartial('//site/global/_footer'); ?>
