@@ -14,6 +14,7 @@
  */
 class Event extends CActiveRecord
 {
+
 	/**
 	 * Returns the static model of the specified AR class.
 	 * @param string $className active record class name.
@@ -41,7 +42,7 @@ class Event extends CActiveRecord
 		// will receive user inputs.
 		return array(
 			array('name, details, where, day, time, confirmation_code', 'required'),
-			array('name, details, where, day, time, guest_messsage', 'length', 'max'=>255),
+			array('name, details, where, day, time, guest_messsage, event_photo', 'length', 'max'=>255),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
 			array('event_id, name, details, where, day, time, guest_messsage', 'safe', 'on'=>'search'),
@@ -74,6 +75,7 @@ class Event extends CActiveRecord
 			'time' => 'Time',
 			'guest_messsage' => 'Guest Messsage',
                         'confirmation_code' => 'Confirmation Code',
+                        'event_photo' => 'Event Photo',
 		);
 	}
 
@@ -96,6 +98,7 @@ class Event extends CActiveRecord
 		$criteria->compare('time',$this->time,true);
 		$criteria->compare('guest_messsage',$this->guest_messsage,true);
                 $criteria->compare('confirmation_code',$this->confirmaton_code,true);
+                $criteria->compare('event_photo',$this->event_photo,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

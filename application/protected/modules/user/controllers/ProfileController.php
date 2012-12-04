@@ -28,6 +28,7 @@ class ProfileController extends Controller
 	 */
 	public function actionEdit()
 	{
+                Yii::import('ext.euploadedimage.EUploadedImage', true);
 		$model = $this->loadUser();
 		$profile=$model->profile;
 
@@ -42,6 +43,19 @@ class ProfileController extends Controller
 		{
 			$model->attributes=$_POST['User'];
 			$profile->attributes=$_POST['Profile'];
+
+                        $model->profile_photo = EUploadedImage::getInstance($model,'profile_photo');
+                        $model->profile_photo->maxWidth = 400;
+                        $model->profile_photo->maxHeight = 200;
+
+                        $model->profile_photo->thumb = array(
+                            'maxWidth' => 50,
+                            'maxHeight' => 50,
+                            'dir' => 'thumbs',
+                            'prefix' => 'asdf_',
+                        );
+
+                        if ($model->profile_photo->saveAs('images/uploads/'.$model->profile_photo));
 
 			if($model->validate()&&$profile->validate()) {
 				$model->save();
