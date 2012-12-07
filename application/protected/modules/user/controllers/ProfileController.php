@@ -14,10 +14,50 @@ class ProfileController extends Controller
 	 */
 	public function actionProfile()
 	{
+                Yii::import('ext.euploadedimage.EUploadedImage', true);
 		$model = $this->loadUser();
+                $event =new Event();
+
+                /** this pulls the events for the user **/
+                $criteria = new CDbCriteria;
+                $criteria->condition = 'user_id = :user_id';
+                $criteria->params = array(
+                  ':user_id' => Yii::app()->user->getId(),
+                );
+                $dataProvider = new CActiveDataProvider('Event', array(
+                'criteria'=>$criteria,
+                ));
+
+                if(isset($_POST['User']))
+		{
+			$model->attributes=$_POST['User'];
+			$profile->attributes=$_POST['Profile'];
+
+                        $model->profile_photo = EUploadedImage::getInstance($model,'profile_photo');
+                        $model->profile_photo->maxWidth = 250;
+                        $model->profile_photo->maxHeight = 250;
+
+                        $model->profile_photo->thumb = array(
+                            'maxWidth' => 50,
+                            'maxHeight' => 50,
+                            'dir' => 'thumbs',
+                            'prefix' => 'asdf_',
+                        );
+
+                        if ($model->profile_photo->saveAs('images/uploads/'.$model->profile_photo));
+                       if($model->save());
+                       $this->redirect(array('profile','id'=>$model->id));
+
+
+
+
+		}
+
 	    $this->render('profile',array(
 	    	'model'=>$model,
-			'profile'=>$model->profile,
+                'event'=>$event,
+                'profile'=>$model->profile,
+                'dataProvider'=>$dataProvider,
 	    ));
 	}
 
@@ -45,8 +85,8 @@ class ProfileController extends Controller
 			$profile->attributes=$_POST['Profile'];
 
                         $model->profile_photo = EUploadedImage::getInstance($model,'profile_photo');
-                        $model->profile_photo->maxWidth = 400;
-                        $model->profile_photo->maxHeight = 200;
+                        $model->profile_photo->maxWidth = 250;
+                        $model->profile_photo->maxHeight = 250;
 
                         $model->profile_photo->thumb = array(
                             'maxWidth' => 50,

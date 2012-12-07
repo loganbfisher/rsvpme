@@ -2,64 +2,52 @@
 $this->breadcrumbs=array(
 	UserModule::t("Profile"),
 );
-$this->menu=array(
-	((UserModule::isAdmin())
-		?array('label'=>UserModule::t('Manage Users'), 'url'=>array('/user/admin'))
-		:array()),
-        ((UserModule::isAdmin())
-		?array('label'=>UserModule::t('List User'), 'url'=>array('/user'))
-		:array()),
 
-    array('label'=>UserModule::t('Edit'), 'url'=>array('edit')),
-    array('label'=>UserModule::t('Events'), 'url'=>array('/event/index')),
-    array('label'=>UserModule::t('Change password'), 'url'=>array('changepassword')),
-    array('label'=>UserModule::t('Logout'), 'url'=>array('/user/logout')),
-);
-?><h1><?php echo UserModule::t('Your profile'); ?></h1>
+?><h1>Your Dashboard</h1>
 
+<div class="two-col-wrapper-container clearfix">
 <?php if(Yii::app()->user->hasFlash('profileMessage')): ?>
 <div class="success">
 	<?php echo Yii::app()->user->getFlash('profileMessage'); ?>
 </div>
 <?php endif; ?>
-<table class="dataGrid">
-	<tr>
-		<th class="label"><?php echo CHtml::encode($model->getAttributeLabel('username')); ?></th>
-	    <td><?php echo CHtml::encode($model->username); ?></td>
-	</tr>
-        <tr>
-          <td>
-            <img src="<?='images/uploads/'. $model->profile_photo ;?>" />
-          </td>
-        </tr>
-	<?php
-		$profileFields=ProfileField::model()->forOwner()->sort()->findAll();
-		if ($profileFields) {
-			foreach($profileFields as $field) {
-				//echo "<pre>"; print_r($profile); die();
-			?>
-	<tr>
-		<th class="label"><?php echo CHtml::encode(UserModule::t($field->title)); ?></th>
-    	<td><?php echo (($field->widgetView($profile))?$field->widgetView($profile):CHtml::encode((($field->range)?Profile::range($field->range,$profile->getAttribute($field->varname)):$profile->getAttribute($field->varname)))); ?></td>
-	</tr>
-			<?php
-			}//$profile->getAttribute($field->varname)
-		}
-	?>
-	<tr>
-		<th class="label"><?php echo CHtml::encode($model->getAttributeLabel('email')); ?></th>
-    	<td><?php echo CHtml::encode($model->email); ?></td>
-	</tr>
-	<tr>
-		<th class="label"><?php echo CHtml::encode($model->getAttributeLabel('create_at')); ?></th>
-    	<td><?php echo $model->create_at; ?></td>
-	</tr>
-	<tr>
-		<th class="label"><?php echo CHtml::encode($model->getAttributeLabel('lastvisit_at')); ?></th>
-    	<td><?php echo $model->lastvisit_at; ?></td>
-	</tr>
-	<tr>
-		<th class="label"><?php echo CHtml::encode($model->getAttributeLabel('status')); ?></th>
-    	<td><?php echo CHtml::encode(User::itemAlias("UserStatus",$model->status)); ?></td>
-	</tr>
-</table>
+<div class="left_col">
+  <div><img src="<?='images/uploads/'. $model->profile_photo ;?>" /></div>
+  <!-- modal content -->
+  <div id="osx-modal-content">
+      <div id="osx-modal-title">Edit profile picture</div>
+      <div class="close"><a href="#" class="simplemodal-close">x</a></div>
+      <div id="osx-modal-data">
+          <?php $form=$this->beginWidget('CActiveForm', array(
+                    'id'=>'profile-form',
+                    'enableAjaxValidation'=>true,
+                    'htmlOptions' => array('enctype'=>'multipart/form-data'),
+            )); ?>
+            <div class="row">
+                <?php echo $form->labelEx($model,'profile_photo'); ?>
+                <?php echo Chtml::activeFileField($model,'profile_photo'); ?>
+                <?php echo $form->error($model,'profile_photo'); ?>
+            </div>
+            <div class="row buttons">
+                <?php echo CHtml::submitButton($model->isNewRecord ? UserModule::t('Create') : UserModule::t('Save')); ?>
+            </div>
+          <?php $this->endWidget(); ?>
+      </div>
+  </div>
+  <div style="clear: both; height: 45px; margin-top: 10px; float: right;">
+    <a href='#' class='osx edit-prof-icon' title="Edit profile image"></a>
+    <? if(UserModule::isAdmin()): ?>
+    <?=Chtml::link('Manage Users', array('/user/admin'))?>
+    <?=Chtml::link('List Users', array('/user'))?>
+    <? endif; ?>
+    <?=Chtml::link('', array('edit'),array('class'=>'edit-profile-icon', 'title'=>'Edit Profile'))?>
+    <?=Chtml::link('', array('changepassword'),array('class'=>'account-settings-icon','title'=>'Change Password'))?>
+  </div>
+</div>
+
+<?php $this->widget('zii.widgets.CListView', array(
+        'id'=>'event_right_col',
+	'dataProvider'=>$dataProvider,
+	'itemView'=>'_view',
+)); ?>
+</div>
