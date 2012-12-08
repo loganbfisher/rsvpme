@@ -14,8 +14,12 @@
 
     <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/main.css" />
     <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/form.css" />
+    <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/osx.css" />
+
     <link href='http://fonts.googleapis.com/css?family=Patua+One' rel='stylesheet' type='text/css'>
       <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery-1.7.2.min.js"></script>
+      <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery.simplemodal.js"></script>
+      <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/osx.js"></script>
       <title><?php echo CHtml::encode($this->pageTitle); ?></title>
   </head>
 
