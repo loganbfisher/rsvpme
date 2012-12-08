@@ -1,9 +1,9 @@
 <div class="header">
   <h1 class="logo">
    <? if (!Yii::app()->user->isGuest) {
-      echo CHtml::link('rsvp.me', array('/user/profile'));
+      echo CHtml::link('evite<span class="logo-pad">pad</span>', array('/user/profile'));
     } else {
-      echo CHtml::link('rsvp.me', array('/site/index'));
+      echo CHtml::link('evite<span class="logo-pad">pad</span>', array('/site/index'));
     }?>
 
   </h1>
@@ -16,9 +16,9 @@
   });
 </script>
   <?=CHtml::link(CHtml::image('images/dropdown-arrow.png'), array('#'),array('class'=>'login-options fright','style'=>'padding: 5px 10px; padding-right: 15px; border-left: 1px dotted #666;'))?>
-      <? if (!Yii::app()->user->isGuest): ?> {
+      <? if (!Yii::app()->user->isGuest): ?>
         <?= CHtml::link(CHtml::image('images/profile-icon.png'), array('/user/profile'),array('class'=>'fright','style'=>'padding: 5px; border-left: 1px dotted #666;')); ?>
-     }
+
     <? endif; ?>
   <?= CHtml::link('Create Event', array('/event/create'), array('class' => 'login-text fright')); ?>
 

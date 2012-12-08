@@ -1,7 +1,7 @@
 <?php /* @var $this Controller */ ?>
 <?php $this->beginContent('//layouts/main'); ?>
 
-	<div id="content-2-col">
+	<div id="content-2-col" class="clearfix">
 		<?php echo $content; ?>
 
           <div id="sidebar">
