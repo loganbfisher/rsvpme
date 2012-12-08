@@ -47,10 +47,6 @@ class ProfileController extends Controller
                         if ($model->profile_photo->saveAs('images/uploads/'.$model->profile_photo));
                        if($model->save());
                        $this->redirect(array('profile','id'=>$model->id));
-
-
-
-
 		}
 
 	    $this->render('profile',array(
@@ -100,10 +96,11 @@ class ProfileController extends Controller
 			if($model->validate()&&$profile->validate()) {
 				$model->save();
 				$profile->save();
-                Yii::app()->user->updateSession();
+                                Yii::app()->user->updateSession();
 				Yii::app()->user->setFlash('profileMessage',UserModule::t("Changes is saved."));
 				$this->redirect(array('/user/profile'));
-			} else $profile->validate();
+			} else
+                          $profile->validate();
 		}
 
 		$this->render('edit',array(
@@ -157,4 +154,5 @@ class ProfileController extends Controller
 		}
 		return $this->_model;
 	}
+
 }

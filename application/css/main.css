@@ -257,12 +257,11 @@ color: #fff; width: 105px;}
 .left_col {float: left; margin-right: 10px; width: 250px; background: #333; padding: 10px;-moz-border-radius: 5px;
 -webkit-border-radius: 5px;
 border-radius: 5px;}
-#event_right_col {float: right; width: 625px; padding: 10px; background: #fff;-moz-border-radius: 5px;
+#event_right_col {float: right; width: 645px;}
+
+#event_right_col .event-list {margin-bottom: 10px; padding: 10px; background: #fff;-moz-border-radius: 5px;
 -webkit-border-radius: 5px;
 border-radius: 5px;}
-
-#event_right_col .items .event-list:nth-child(even) {background: #e5e5e5;}
-#event_right_col .items .event-list:nth-child(odd) {background: #f2f2f2; border-bottom: 1px dotted #ccc;}
 #event_right_col .summary {display: none;}
 
 .default-btn {
