@@ -206,8 +206,6 @@ input[type='submit'].submit {
 .hint.login a {color:#fff; text-decoration: none;}
 .required {color: #09f;}
 .errorMessage {color: #09f;}
-.errorSummary {display: none;}
-.note {display: none;}
 .rememberMe {margin-top: 10px;}
 .rememberMe label {font-size: 14px !important;}
 .container {margin-top: 20px; position: relative;}

@@ -38,8 +38,8 @@ class ProfileController extends Controller
                         $model->profile_photo->maxHeight = 250;
 
                         $model->profile_photo->thumb = array(
-                            'maxWidth' => 50,
-                            'maxHeight' => 50,
+                            'maxWidth' => 100,
+                            'maxHeight' => 100,
                             'dir' => 'thumbs',
                             'prefix' => 'asdf_',
                         );
@@ -85,8 +85,8 @@ class ProfileController extends Controller
                         $model->profile_photo->maxHeight = 250;
 
                         $model->profile_photo->thumb = array(
-                            'maxWidth' => 50,
-                            'maxHeight' => 50,
+                            'maxWidth' => 100,
+                            'maxHeight' => 100,
                             'dir' => 'thumbs',
                             'prefix' => 'asdf_',
                         );

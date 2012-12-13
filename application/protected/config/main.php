@@ -65,15 +65,21 @@ return array(
             'allowAutoLogin'=>true,
             'loginUrl' => array('/user/login'),
         ),
-        // uncomment the following to enable URLs in path-format
-        //'urlManager'=>array(
-        //'urlFormat'=>'path',
-        //'rules'=>array(
-        //'<controller:\w+>/<id:\d+>'=>'<controller>/view',
-        //'<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
-        //'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
-        //),
-        //),
+        'urlManager'=>array(
+                  'urlFormat'=>'path',
+                  'showScriptName'=>false,
+                  'rules'=>array(
+                          'users/<username:\w+>/addAsFriend'=>'user_friend/create',
+                          'friend/<username:\w+>/delete'=>'user_friend/delete',
+                          'users/<username:\w+>/friends'=>'user_friend/index',
+                          'users/<username:\w+>/edit'=>'users/update',
+                          'users/<username:\w+>'=>'users/view',
+                          'users/<username:\w+>/findfriends'=>'users/index',
+                          '<controller:\w+>/<id:\d+>'=>'<controller>/view',
+                          '<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
+                          '<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
+                  ),
+          ),
 
         'db' => array(
             'connectionString' => 'mysql:host=127.0.0.1;dbname=rsvpme',
@@ -92,6 +98,8 @@ return array(
                 array(
                     'class' => 'CFileLogRoute',
                     'levels' => 'error, warning',
+
+
                 ),
             // uncomment the following to show log messages on web pages
             /*
@@ -101,7 +109,9 @@ return array(
              */
             ),
         ),
+
     ),
+
     // application-level parameters that can be accessed
     // using Yii::app()->params['paramName']
     'params' => array(

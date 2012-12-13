@@ -27,7 +27,7 @@ $this->menu=array(
     </tr>
     <tr>
       <td>
-        <img src="<?='images/uploads/'. $model->event_photo ;?>" />
+        <img src="<?='/images/uploads/'. $model->event_photo ;?>" />
       </td>
     </tr>
     <tr>

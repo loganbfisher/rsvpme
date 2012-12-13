@@ -3,6 +3,12 @@
 /* @var $model Event */
 /* @var $form CActiveForm */
 ?>
+<script>
+$(document).ready(function(){
+  $('#date').datepicker();
+  $('#time').timepicker();
+});
+</script>
 <div class="form">
 
 <?php $form=$this->beginWidget('CActiveForm', array(
@@ -35,13 +41,13 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'day'); ?>
-		<?php echo $form->textField($model,'day',array('size'=>60,'maxlength'=>255)); ?>
+		<?php echo $form->textField($model,'day',array('id'=>'date', 'size'=>60,'maxlength'=>255)); ?>
 		<?php echo $form->error($model,'day'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'time'); ?>
-		<?php echo $form->textField($model,'time',array('size'=>60,'maxlength'=>255)); ?>
+		<?php echo $form->textField($model,'time',array('id'=>'time','size'=>60,'maxlength'=>255)); ?>
 		<?php echo $form->error($model,'time'); ?>
 	</div>
 

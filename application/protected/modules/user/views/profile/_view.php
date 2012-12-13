@@ -8,7 +8,7 @@
 
 <div class="view clearfix event-list" style="padding: 10px">
     <div style="width: 150px; height: 150px; float: left; background: #ccc;">
-      <img src="<?='images/uploads/profile/'.'profile_'. $data->event_photo ;?>" />
+      <img src="<?='/images/uploads/profile/'.'profile_'. $data->event_photo ;?>" />
     </div>
 
     <div style="float: left; padding: 0 10px 10px 10px; width: 430px;">

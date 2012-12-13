@@ -1,0 +1,8 @@
+RewriteEngine on
+
+# if the request is not an existing file or directory
+RewriteCond %{REQUEST_URI} !^/favicon.ico$
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+# forward it to index.php
+RewriteRule ^.*$ /index.php [L]

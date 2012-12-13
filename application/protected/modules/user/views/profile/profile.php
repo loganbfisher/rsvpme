@@ -12,7 +12,7 @@ $this->breadcrumbs = array(
     </div>
   <?php endif; ?>
   <div class="left_col">
-    <div><img src="<?= 'images/uploads/' . $model->profile_photo; ?>" /></div>
+    <div><img src="<?= '/images/uploads/' . $model->profile_photo; ?>" /></div>
     <!-- modal content -->
     <div id="osx-modal-content">
       <div id="osx-modal-title">Edit profile picture</div>
@@ -37,6 +37,7 @@ $this->breadcrumbs = array(
       </div>
     </div>
     <div style="clear: both; height: 45px; margin-top: 10px; float: right;">
+      
       <a href='#' class='osx edit-prof-icon' title="Edit profile image"></a>
       <? if (UserModule::isAdmin()): ?>
         <?= Chtml::link('Manage Users', array('/user/admin')) ?>
@@ -44,9 +45,10 @@ $this->breadcrumbs = array(
       <? endif; ?>
 <?= Chtml::link('', array('edit'), array('class' => 'edit-profile-icon', 'title' => 'Edit Profile')) ?>
 <?= Chtml::link('', array('changepassword'), array('class' => 'account-settings-icon', 'title' => 'Change Password')) ?>
-    </div>
-  </div>
 
+    </div>
+    <?php $this->widget('application.components.StFriendsList', array('user_id'=>$model->id, 'username'=>$model->username)); ?>
+  </div>
   <?php
   $this->widget('zii.widgets.CListView', array(
       'id' => 'event_right_col',

@@ -15,9 +15,9 @@
     });
   });
 </script>
-  <?=CHtml::link(CHtml::image('images/dropdown-arrow.png'), array('#'),array('class'=>'login-options fright','style'=>'padding: 5px 10px; padding-right: 15px; border-left: 1px dotted #666;'))?>
+  <?=CHtml::link(CHtml::image('/images/dropdown-arrow.png'), array('#'),array('class'=>'login-options fright','style'=>'padding: 5px 10px; padding-right: 15px; border-left: 1px dotted #666;'))?>
       <? if (!Yii::app()->user->isGuest): ?>
-        <?= CHtml::link(CHtml::image('images/profile-icon.png'), array('/user/profile'),array('class'=>'fright','style'=>'padding: 5px; border-left: 1px dotted #666;')); ?>
+        <?= CHtml::link(CHtml::image('/images/profile-icon.png'), array('/user/profile'),array('class'=>'fright','style'=>'padding: 5px; border-left: 1px dotted #666;')); ?>
 
     <? endif; ?>
   <?= CHtml::link('Create Event', array('/event/create'), array('class' => 'login-text fright')); ?>
